@@ -1,0 +1,251 @@
+[{
+    "component_name": "基础组件",
+    "component_id": "Dashboard",
+    "component_description": "提供平台运行基础显示控件，服务以及页面。平台运行的基础",
+    "component_category": "Dashboard",
+    "component_package_name": "Dashboard",
+    "component_path": "base/js",
+    "component_thumbnail": "base/images/admin/components/base_info.png",
+    "config_module": null,
+    "layouts": [{
+        "layout_id": "Base.ChessBoardLayout",
+        "name": "棋盘布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/ChessBoardLayout.png",
+        "widget_id": "Base.ChessBoardLayout"
+    }],
+    "styles": [{
+        "style_id": "Dark",
+        "name": "Dark",
+        "description": "",
+        "classes": "dark oneui",
+        "resources": [
+            "base/idx/themes/oneuidark/oneuidark.css"
+        ]
+    }, {
+        "style_id": "Grey",
+        "name": "Grey",
+        "description": "",
+        "classes": "grey oneui",
+        "resources": [
+            "base/idx/themes/oneui/oneui.css",
+            "base/idx/themes/oneuidark/oneuidark.css",
+            "base/idx/themes/oneuidarkgrey/oneuidark.css"
+        ]
+    }, {
+        "style_id": "Blank",
+        "name": "Blank",
+        "description": "",
+        "classes": "",
+        "resources": [
+            "base/bootstrap/css/bootstrap.min.css",
+            "base/css/adminConsole.css"
+        ]
+    }],
+    "widgets": [{
+        "widget_id": "Base.ChessBoardLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "棋盘布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/ChessBoardLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main"
+        ],
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": -1,
+                "widget_types": [
+                    "dashboard_widget"
+                ]
+            }
+        },
+        "#parametersMeta": {
+            "row": {
+                "defaultValue": 4,
+                "rules": "required",
+                "displayLabel": "行数",
+                "inputType": "datarange",
+                "datarange": [
+                    1,
+                    20
+                ]
+            },
+            "column": {
+                "defaultValue": 4,
+                "rules": "required",
+                "displayLabel": "列数",
+                "inputType": "datarange",
+                "datarange": [
+                    1,
+                    20
+                ]
+            },
+            "margin": {
+                "defaultValue": 5,
+                "rules": "required",
+                "displayLabel": "外边距",
+                "inputType": "datarange",
+                "datarange": [
+                    0,
+                    20
+                ]
+            }
+        }
+
+    }, {
+        "widget_id": "Base.Chess",
+        "#name": "棋子",
+        "description": "",
+        "#widget_type": [
+            "dashboard_widget"
+        ],
+        "module": {
+            "moduleName": "base/dashboard/Chess",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "xspan": {
+                "defaultValue": 4,
+                "rules": "required",
+                "displayLabel": "横跨格数",
+                "inputType": "datarange",
+                "datarange": [
+                    1,
+                    4
+                ]
+            },
+            "yspan": {
+                "defaultValue": 4,
+                "rules": "required",
+                "displayLabel": "纵跨格数",
+                "inputType": "datarange",
+                "datarange": [
+                    1,
+                    4
+                ]
+            }
+        }
+    }],
+    "pages": [{
+        "page_id": "Base.dashboardpage",
+        "type": "page",
+        "name": "KPI dashboard",
+        "description": "",
+        "layout_id": "Base.ChessBoardLayout",
+        "config": [{
+            "id": "Base.ChessBoardLayout",
+            "widget_id": "Base.ChessBoardLayout",
+            "module": "base/layout/ChessBoardLayout",
+            "regions": [
+                "main"
+            ],
+            "container": "root",
+            "parameters": {
+                "row": 3,
+                "column": 4,
+                "margin": 5
+            }
+        }, {
+            "id": "Base.Chess1",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess2",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 2
+            }
+        }, {
+            "id": "Base.Chess3",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 2,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess4",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess5",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 2
+            }
+        }, {
+            "id": "Base.Chess6",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess7",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess8",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess9",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }]
+    }],
+    "defaultPageId": "Base.dashboardpage",
+    "defaultStyleId": "Grey"
+}]

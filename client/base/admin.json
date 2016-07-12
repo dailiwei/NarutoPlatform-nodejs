@@ -1,0 +1,71 @@
+[
+  {
+    "component_name": "Simple",
+    "component_path": "/rich/demo/web",
+    "component_description": "This is Simple component for RichWay programming platform",
+    "component_category": "Simple",
+    "layouts": [
+    ],
+    "styles": [
+    ],
+    "widgets": [
+      {
+        "widget_id": "base.admin.AppListView",
+        "#name": "应用管理",
+        "description": "应用管理的独立widget",
+        "#widget_type": ["view"],
+        "module": {
+          "moduleName": "base/admin/AppListView",
+          "pathName": "base",
+          "pathLocation": "/base/js"
+        }
+      }
+    ],
+    "pages": [
+      {
+        "page_id": "page1",
+        "type": "page",
+        "parent_page_id": "null",
+        "name": "应用管理",
+        "description": "",
+        "layout_id": "Base.BlankLayout2manager",
+        "config": [
+          {
+            "id": "Base.BlankLayout2manager",
+            "module": "base/layout/BlankLayout",
+            "regions": [
+              "view"
+            ],
+            "container": "main",
+            "parameters": {}
+          },
+          {
+            "id": "base.admin.AppListView",
+            "module": "base/admin/AppListView",
+            "container": "Base.BlankLayout2manager",
+            "regions": [ ],
+            "parameters": {"region": "view"}
+          }
+        ]
+      },
+      {
+        "page_id": "label6",
+        "type": "label",
+        "parent_page_id": null,
+        "name": "系统管理",
+        "description": "",
+        "layout_id": "Base.layout2"
+      },
+      {
+        "page_id": "page16",
+        "type": "page",
+        "parent_page_id": "label6",
+        "name": "模块管理",
+        "description": "",
+        "layout_id": "Base.layout2"
+      }
+    ],
+    "defaultPageId": "page1",
+    "defaultStyleId": "Base.Grey"
+  }
+]

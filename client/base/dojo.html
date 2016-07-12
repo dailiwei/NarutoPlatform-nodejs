@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>编程模型</title>
+    <script type="text/javascript">
+        var WEB_ROOT = "/rich/";
+        var APP_ROOT = "http://localhost:8080/rich/";
+        var APP_ID = "0";
+        var userName = "cmc";
+        var CONFIG_NAME = "admin.json";
+    </script>
+    <base href="/rich/">
+    <style type="text/css">
+        @import "/rich/base/idt/dojo/resources/dojo.css";
+        @import '/rich/base/idt/dijit/themes/flat/flat.css';
+        @import "/rich/base/idt/gridx/resources/claro/Gridx.css";
+    </style>
+
+    <!--bootStrap-->
+    <link rel="stylesheet" type="text/css" href="/rich/base/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/rich/base/vendor/bootstrap/css/bootstrap-switch.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="/rich/base/vendor/html5shiv.min.js"></script>
+    <script src="/rich/base/vendor/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/rich/base/vendor/jquery/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="/rich/base/js/jqAjaxUtil.js"></script>
+    <script type="text/javascript" src="/rich/base/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/rich/base/vendor/bootstrap/js/bootstrap-switch.min.js"></script>
+    <link href="/rich/base/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/rich/base/vendor/mapicons/css/map-icons.css"/>
+    <!--jqgrid-->
+    <script src="/rich/base/vendor/jquery/jqgrid/js/i18n/grid.locale-cn.js"></script>
+    <script src="/rich/base/vendor/jquery/jqgrid/js/jquery.jqGrid.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/rich/base/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css">
+    <link type="text/css" rel="stylesheet" href="/rich/base/css/plugins/jqGrid/ui.jqgrid.css">
+    <!--easyUi-->
+    <script src="/rich/base/vendor/jquery/easyui/jquery.easyui.min.js"></script>
+    <script src="/rich/base/vendor/jquery/easyui/locale/easyui-lang-zh_CN.js"></script>
+    <script src="/rich/base/js/easyui/easyuiDatagridUtil.js"></script>
+    <script src="/rich/base/js/easyui/gridTool.js"></script>
+    <link type="text/css" rel="stylesheet" href="/rich/base/vendor/jquery/easyui/themes/metro-blue/easyui.css">
+    <link type="text/css" rel="stylesheet" href="/rich/base/vendor/jquery/easyui/themes/icon.css">
+    <!--base style-->
+    <link href="/rich/base/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/rich/base/css/frame.css" rel="stylesheet" type="text/css"/>
+    <link href="/rich/base/css/blue/blue.css" rel="stylesheet" type="text/css"/>
+    <link href="/rich/base/css/component/component.css" rel="stylesheet" type="text/css"/>
+    <link href="/rich/base/css/themes/default.theme.css" rel="stylesheet" id="theme">
+
+    <!-- Hi font css include -->
+    <link href="/rich/base/vendor/glyphicons/css/glyphicons.css" rel="stylesheet">
+    <!--jquery 插件-->
+    <script type="text/javascript" src="/rich/base/vendor/jquery/jquery.blockui.min.js"></script>
+    <script type="text/javascript" src="/rich/base/vendor/jquery/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/rich/base/vendor/zTree_v3/js/jquery.ztree.all-3.5.js"></script>
+    <script type="text/javascript" src="/rich/base/vendor/diyUpload/js/webuploader-html5only.js"></script>
+    <!-- 引入layer插件 -->
+    <script type="text/javascript" src="/rich/base/js/plugins/layer-v2.0/layer/layer.js"></script>
+    <script type="text/javascript" src="/rich/base/js/plugins/layer-v2.0/layer/laydate/laydate.js"></script>
+    <link rel="stylesheet" type="text/css" href="/rich/base/vendor/zTree_v3/css/zTreeStyle/zTreeStyle.css"/>
+    <!-- 滑动条插件 -->
+    <script type="text/javascript"
+            src="/rich/base/vendor/jquery/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/rich/base/vendor/jquery/ion.rangeSlider/css/ion.rangeSlider.css"
+            />
+    <link rel="stylesheet" type="text/css"
+          href="/rich/base/vendor/jquery/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css"/>
+
+    <!-- Toastr style -->
+    <link href="/rich/base/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <!-- Toastr -->
+    <script src="/rich/base/js/plugins/toastr/toastr.min.js"></script>
+    <script src="/rich/base/vendor/avalon/avalon.1.4.3.min.js"></script>
+    <script src="/rich/base/vendor/validate.min.js"></script>
+    <!-- 上传的 -->
+    <script type="text/javascript" src="/rich/base/vendor/diyUpload/js/webuploader-html5only.js"></script>
+    <!--3D-->
+    <script src="/rich/base/idt/Cesium/Cesium.js"></script>
+    <script src="/rich/base/vendor/snap.svg-min.js"></script>
+    <!-- for ioc task bar -->
+    <link rel="stylesheet" type="text/css" href="/rich/base/idt/esri/css/esri.css"/>
+    <link rel="stylesheet" type="text/css" href="/rich/base/idt/Cesium/CesiumViewer.css"/>
+
+
+    <style type="text/css">.gridx {
+        width: 800px;
+        height: 300px;
+        white-space: nowrap;
+        word-wrap: normal;
+        word-break: keep-all;
+        overflow: hidden;
+    }
+    </style>
+
+    <script>
+        var dojoConfig = {
+            isDebug: true,
+            trace: "",
+            async: true,
+            parseOnLoad: true,
+            devMode: true,
+            waitSeconds: 100,
+            packages: [
+                {
+                    name: "dojo",
+                    location: "/rich/base/idt/dojo"
+                },
+                {
+                    name: "dijit",
+                    location: "/rich/base/idt/dijit"
+                },
+                {
+                    name: "dojox",
+                    location: "/rich/base/idt/dojox"
+                },
+                {
+                    name: "gridx",
+                    location: "/rich/base/idt/gridx"
+                },
+                {
+                    name: "idx",
+                    location: "/rich/base/idx"
+                },
+                {
+                    name: "esri",
+                    location: "/rich/base/idt/esri"
+                },
+                {
+                    name: "put-selector",
+                    location: "/rich/base/idt/put-selector"
+                },
+                {
+                    name: "xstyle",
+                    location: "/rich/base/idt/xstyle"
+                },
+                {
+                    name: "Cesium",
+                    location: "/rich/base/idt/Cesium"
+                },
+                {
+                    name: "base",
+                    location: "/rich/base/js"
+                },
+                {
+                    name: "baseImages",
+                    location: "/rich/base/images"
+                },
+                {
+                    name: "rdijit",
+                    location: "/rich/base/rdijit"
+                },
+                {
+                    name: "vendor",
+                    location: "/rich/base/vendor"
+                },
+
+                {
+                    name: "rain-service",
+                    location: '/rich/hydrologic/rain-service'
+                },
+                {
+                    name: "river-service",
+                    location: '/rich/hydrologic/river-service'
+                },
+                {
+                    name: "hydrologic",
+                    location: '/rich/hydrologic'
+                }, {
+                    name: "pubMsg",
+                    location: '/rich/module/pubMsg'
+                },
+                {
+                    name: "analysis",
+                    location: '/rich/analysis'
+                },
+                {
+                    name: "drought",
+                    location: "/rich/drought"
+                },
+                {
+                    name: "simple",
+                    location: "/rich/simple"
+                },
+                {
+                    name: "dispsinglersvr",
+                    location: "/rich/dispsinglersvr"
+                },
+                //新的组件
+                {
+                    name: "busi_dispatch",//调度组件
+                    location: "/rich/busi_dispatch"
+                },
+                {
+                    name: "busi_drought",//抗旱组件
+                    location: "/rich/busi_drought"
+                },
+                //新的组件模块
+                {
+                    name: "water_resource",
+                    location: "/rich/water_resource"
+                },
+                {
+                    name: "drought",
+                    location: "/rich/drought"
+                },
+                {
+                    name: "fsoverview",
+                    location: "/rich/fsoverview"
+                },
+                {
+                    name: "picvideo",
+                    location: "/rich/picvideo"
+                }
+
+
+            ]
+        };
+    </script>
+    <script type="text/javascript" src="/rich/base/idt/dojo/dojo.js"></script>
+
+    <script type="text/javascript">
+        function resizeIframe() {
+
+        }
+    </script>
+    <script type="text/javascript">
+        var IP_PORT = "${appPath}";
+        var appwidgets = null;
+        var applayouts = null;
+        var currentPageWidgets = null;
+        var currentLayout = null;
+        var GIS_SERVICE = "http://192.168.240.185:8080/";
+        var GIS_TOKEN = "";//"
+        var DEFAULT_ADCD = "220000000000000";
+        var DEFAULT_ADNM = "吉林省";
+        require(['base/main1']);
+    </script>
+</head>
+<body style="background-color: white;">
+
+<div id="main" style="width:100%;height:100%;">
+</div>
+
+<script src="/rich/base/js/utils/HomeUtil.js"></script>
+<script src="/rich/base/js/utils/SysUtil.js"></script>
+<script src="/rich/base/vendor/echarts/echarts-all.js"></script>
+<script src="/rich/base/vendor/My97DatePicker/WdatePicker.js"></script>
+
+</body>
+</html>
