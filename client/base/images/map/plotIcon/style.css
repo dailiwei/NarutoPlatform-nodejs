@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?57flm0');
+    src:    url('fonts/icomoon.eot?57flm0#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?57flm0') format('truetype'),
+        url('fonts/icomoon.woff?57flm0') format('woff'),
+        url('fonts/icomoon.svg?57flm0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="plot-"], [class*=" plot-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 38px;
+    color: rgba(57, 128, 221, 0.9);
+}
+
+.plot-ellipse-icon:before {
+    content: "\e900";
+}
+.plot-double_arrow-icon:before {
+    content: "\e901";
+}
+.plot-extent-icon:before {
+    content: "\e902";
+}
+.plot-tailed_arrow-icon:before {
+    content: "\e903";
+}
+.plot-text-icon:before {
+    content: "\e904";
+}
+.plot-triangle-icon:before {
+    content: "\e905";
+}
+.plot-custom_tailed-icon:before {
+    content: "\e906";
+}
+.plot-polyline-icon:before {
+    content: "\e907";
+}
+.plot-custom_arrow-icon:before {
+    content: "\e908";
+}
+.plot-line-icon:before {
+    content: "\e909";
+}
+.plot-rect_flag-icon:before {
+    content: "\e90a";
+}
+.plot-simple_arrow-icon:before {
+    content: "\e90b";
+}
+.plot-circle-icon:before {
+    content: "\e90c";
+}
+.plot-point-icon:before {
+    content: "\e90d";
+}
+.plot-multi_arrow-icon:before {
+    content: "\e90e";
+}
+.plot-freehand-polyline-icon:before {
+    content: "\e90f";
+}
+.plot-freehand-polygon-icon:before {
+    content: "\e910";
+}
+
