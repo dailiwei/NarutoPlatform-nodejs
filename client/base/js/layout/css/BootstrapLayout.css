@@ -1,0 +1,22 @@
+.mainPanel{
+    position:absolute;
+    height: 100%;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #eef2f5;
+    left:500px;
+    top:0px;
+    bottom: 0px;
+    right: 0px;
+  overflow-y:auto;
+}
+.leftPanel{
+    position:absolute;
+    left:0;
+    height: 100%;
+    width: 500px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #fcfcfc;
+    border-right:1px solid #bfbfbf; 
+
+}
+

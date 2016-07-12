@@ -1,0 +1,34 @@
+<div style="width:100%;height:100%">
+    <div class="main">
+        <div class="up">
+            <div style="float: left;width: 55px;height:100%;padding-left: 10px;padding-top: 6px">
+                <div class="icon_run" data-dojo-attach-point="app_state_icon" data-dojo-attach-event="click:_changeAppState"></div>
+            </div>
+            <div style="float: left;padding-left: 5px">
+                 <div style="width: 200px;height:50%;font-size: 18px;font-weight: bold;white-space: nowrap;text-overflow:ellipsis; overflow:hidden;" data-dojo-attach-point="appName">--</div>
+                 <div style="width: 100%;height:50%">
+                     <div style="float: left;color: #22b9dd" data-dojo-attach-point="app_state_name">未知</div>
+                     <div style="float: left;padding-left: 25px;color: #969696" data-dojo-attach-point="app_creator">创建者:--</div>
+                 </div>
+            </div>
+        </div>
+        <div class="down">
+            <div style="padding-left: 17px">
+                <div class="label" data-dojo-attach-event="click:_openApp" >进入应用</div>
+                <div class="label"  data-dojo-attach-event="click:_manageApp" >管理应用</div>
+                <div class="label"  data-dojo-attach-event="click:_managePages" >页面配置</div>
+                <div class="icon_delete" data-dojo-attach-event="click:_deleteApp" data-dojo-attach-point="deleteNode" title="删除应用"  ></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+         <div style="height: 50%;width: 100%">
+             <div style="float: left;padding-left: 23px;width:100px" >CPU:</div>
+             <div style="float: left;" data-dojo-attach-point="app_device_cpu">--</div>
+         </div>
+         <div style="height: 50%;width: 100%">
+            <div style="float: left;padding-left: 23px;width:100px" >Memory:</div>
+            <div style="float: left;" data-dojo-attach-point="app_device_memory">--</div>
+        </div>
+    </div>
+</div>

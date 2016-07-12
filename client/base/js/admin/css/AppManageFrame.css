@@ -1,0 +1,57 @@
+.base-admin-application-AppManageFrame{
+    width: 100%;
+    height: 100%;
+}
+
+.base-admin-application-AppManageFrame .top{
+    width:100%;
+    height: 42px;
+    /*padding-top: 8px;*/
+    background-color: #fdfdfe;
+    border-bottom: solid 1px #c0c0c0;
+    vertical-align: middle;
+    float:left;
+}
+
+.base-admin-application-AppManageFrame .region{
+
+    height: 90%;
+    width:100%;
+    /*padding-top: 20px;*/
+    /*padding-left: 30px;*/
+    /*padding-right: 10px;*/
+    background-color: #d9dfe5;
+     float:left;
+}
+
+.base-admin-application-AppManageFrame .content{
+    position:absolute;
+    width:100%;
+    height:100%;
+    /*background-color: #007020 ;*/
+    background-color: #d9dfe5;
+    
+}
+
+.base-admin-application-AppManageFrame .cirlce{
+    float: left;
+    padding-left: 0px;
+    width:20px;
+    height:20px;
+    background-color:#CBCBCB;
+    border-radius:50%;
+
+}
+
+.base-admin-application-AppManageFrame .cirlceSelect{
+    background-color:#1AA4CA;
+}
+.base-admin-application-AppManageFrame .cirlcein{
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+}

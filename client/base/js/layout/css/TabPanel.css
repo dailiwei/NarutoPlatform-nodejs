@@ -1,0 +1,340 @@
+.jimu-widget-sidebar-controller{
+    overflow: hidden;
+    background-color: #00aa00;
+}
+.jimu-widget-sidebar-controller .title-list{
+    position: absolute;
+    left: 3px;
+    right: 0;
+    top: 5px;
+    height: 30px;
+    border-top: 1px solid #3a3a3a;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+.jimu-widget-sidebar-controller .title-node{
+    width: 85px;
+    height: 24px;
+    cursor: pointer;
+    /*background-color: #ecf3fd;*/
+    overflow: hidden;
+
+}
+.jimu-widget-sidebar-controller .title-node-more{
+    float:left;
+    right:3px;
+    width: 15px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.jimu-widget-sidebar-controller .title-node:hover{
+
+    background-color: #9ac6ef;
+}
+.jimu-widget-sidebar-controller .max-pane{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 5px;
+    bottom: 10px;
+    box-shadow: 0 0 10px #888;
+    background-color: #ffffff;
+
+    /*border: 1px solid #111111;*/
+}
+.jimu-widget-sidebar-controller .max-pane .title-node{
+    margin-left: 2px;
+    float: left;
+}
+.jimu-widget-sidebar-controller .min-pane .title-node{
+    margin-bottom: 36px;
+}
+.jimu-widget-sidebar-controller .min-pane .title-node:nth-child(1){
+    margin-top: -2px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+/*.jimu-widget-sidebar-controller .max-pane .title-node:nth-child(1){*/
+/*margin-left: 0;*/
+/*}*/
+
+.jimu-widget-sidebar-controller .title-node img{
+    float:right;
+
+    padding-top: 2px;
+    margin: 1px;
+    width: 15px;
+    height: 15px;
+    margin-right:8px;
+    background-image: url(images/close.png);
+}
+.jimu-widget-sidebar-controller .title-node img:hover{
+    background-image: url(images/close_red.png);
+
+}
+.jimu-widget-sidebar-controller .tab-indicator{
+    width: 0px;
+    height: 2px;
+    margin: auto;
+}
+
+
+.jimu-widget-sidebar-controller .content-list{
+    position: absolute;
+    left: 3px;
+    top: 36px;
+    right: 3px;
+    bottom: 3px;
+
+    box-shadow: 0 0 2px #76a1c6;
+
+}
+.jimu-widget-sidebar-controller .content-node{
+    position: absolute;
+    margin: 2px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*box-shadow: 0 0 3px #888;*/
+
+    /*outline: 1px solid rgba(0,0,0, 0.3);*/
+    /*border-top: 1px solid rgba(255,255,255, 0.08);*/
+}
+.jimu-widget-sidebar-controller .content-title-bg{
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    top: -1px;
+    height: 18px;
+    opacity: 0.2;*/
+}
+.jimu-widget-sidebar-controller .content-title{
+    /*position: absolute;*/
+    float: left;
+    padding-top: 4px;
+    margin-left: 5px;
+    /*color: #2361b6;*/
+    /*font: 10px Arial;*/
+    color: #181a19;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    width: 55px;
+}
+.jimu-widget-sidebar-controller .content-title-more{
+    float: left;
+    padding-top: 5px;
+    margin-left: 3px;
+    background-image: url(images/tab_more.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    width: 12px;
+    height:24px;
+}
+.jimu-widget-sidebar-controller .content-title-more:hover{
+    background-image: url(images/tab_more_hover.png);
+}
+.jimu-widget-sidebar-controller .content-title-select{
+
+    font-weight: bold;
+    color: #251bdc;
+}
+.jimu-widget-sidebar-controller .content-pane{
+    position: absolute;
+    left: 0;
+    top: 1px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.jimu-widget-sidebar-controller .content-pane .more-group-pane{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.jimu-widget-sidebar-controller .tab-resizer{
+    width: 17px;
+    height: 100%;
+    left: -7px;
+    float:left;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url(images/arrow21.png);
+    border: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.jimu-widget-sidebar-controller .tab-resizer .action-node{
+    width: 10px;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+}
+
+.jimu-widget-sidebar-controller .tab-resizer .action-node div{
+    width: 11px;
+    height: 8px;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jimu-widget-sidebar-controller .tab-resizer .left-arrow{
+    background-image: url(images/arrow_left.png);
+}
+.jimu-widget-sidebar-controller .tab-resizer .left-arrow:hover{
+    background-image: url(images/arrow_left_hover.png);
+}
+.jimu-widget-sidebar-controller .tab-resizer .right-arrow{
+    background-image: url(images/arrow_right.png);
+}
+.jimu-widget-sidebar-controller .tab-resizer .right-arrow:hover{
+    background-image: url(images/arrow_right_hover.png);
+}
+
+.jimu-widget-sidebar-controller .min-pane{
+    position: absolute;
+    top: 0;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    border: 1px solid #111111;
+}
+
+.jimu-widget-sidebar-controller .other-group-pane{
+
+
+    /*border: 1px solid #111111;*/
+    border-left: none;
+    position: absolute;
+    left: 415px;
+    top: 0;
+    right: 5px;
+    bottom: 10px;
+    background-color: #EBEDF0;
+    overflow-y: auto;
+}
+.jimu-widget-sidebar-controller .other-group:hover{
+    background-color: #B7D0F7;
+}
+.jimu-widget-sidebar-controller .other-group-pane .jimu-state-active{
+    background-color: #292929;
+}
+.jimu-widget-sidebar-controller .other-group-pane-title{
+    width: 100%;
+    height: 24px;
+    position: relative;
+}
+.jimu-widget-sidebar-controller .other-group-pane-title .bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #76a1c6;
+    opacity: 0.3;
+}
+.jimu-widget-sidebar-controller .other-group-pane-title .text{
+    position: absolute;
+    left: 14px;
+    top: 3px;
+    color: #527191;
+    font: 12px "微软雅黑";
+}
+.jimu-widget-sidebar-controller .other-group-pane-title .close{
+    position: absolute;
+    right: 2px;
+    top: 6px;
+    height: 11px;
+    width: 16px;
+    cursor: pointer;
+    background: center center no-repeat url(images/close.png);
+}
+.jimu-widget-sidebar-controller .other-group{
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    border-bottom: solid #bcd1ee 2px;
+}
+.jimu-widget-sidebar-controller .other-group-icon{
+    float: left;
+    margin: 11px 24px;
+    width: 22px;
+    height: 22px;
+}
+.jimu-widget-sidebar-controller .other-group-title{
+    float: left;
+    margin: 15px 0;
+    color: #666;
+    font: 12px Arial bold;
+}
+.jimu-widget-sidebar-controller .other-group-choose{
+    float: right;
+    margin: 15px 30px;
+}
+/*widget pane in the GroupTabContainer*/
+.jimu-widget-sidebar-controller .wp{
+    border: 1px solid transparent;
+}
+.jimu-widget-sidebar-controller .wp-title{
+    overflow: hidden;
+}
+.jimu-widget-sidebar-controller .wp-title .title-text{
+    width: 57px;
+    height: 20px;
+    padding: 5px 13px;
+    background-color: white;
+    float: left;
+    border-top-left-radius: 4px;
+    color: #222;
+    font: 12px Arial bold;
+}
+.jimu-widget-sidebar-controller .wp-title .title-angle{
+    width: 21px;
+    height: 20px;
+    background: url(images/tab_triangle.png);
+    float: left;
+}
+.jimu-widget-sidebar-controller .wp-pane{
+    background-color: white;
+    overflow: hidden;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+}
+
+/** for IE7/8, they don't support nth-child ***/
+.jimu-widget-sidebar-controller .min-pane .title-node:first-child{
+    border-top: 1px solid #3a3a3a;
+}
+/*.jimu-widget-sidebar-controller .max-pane .title-node:first-child{*/
+/*margin-left: 0;*/
+/*}*/
+
+
+.jimu-widget-sidebar-controller .content-title-bg{
+    filter: alpha(opacity=12); /* IE 7 and Earlier */
+    /* Next 2 lines IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=12)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=12);
+}
+
+.jimu-widget-sidebar-controller .other-group-pane-title .bg{
+    filter: alpha(opacity=30); /* IE 7 and Earlier */
+    /* Next 2 lines IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}

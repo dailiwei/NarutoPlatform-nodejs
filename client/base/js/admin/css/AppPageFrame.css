@@ -1,0 +1,62 @@
+.base-admin-application-AppPageFrame{
+
+}
+
+.base-admin-application-AppPageFrame .mainPanel2{
+    position:absolute;
+    height: 100%;
+    /*border: solid 1px #bfbfbf;*/
+    /*background-color: #a9adb2;*/
+    left:200px;
+    top:0px;
+    bottom: 0px;
+    right: 200px;
+    /*padding-top: 15px;*/
+}
+.base-admin-application-AppPageFrame .leftPanel2{
+    position:absolute;
+    left:0;
+    height: 100%;
+    width: 200px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #fcfcfc;
+    border-right:1px solid #bfbfbf;
+
+}
+.base-admin-application-AppPageFrame .rightPanel2{
+    position:absolute;
+    right:0;
+    height: 100%;
+    width: 200px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #fcfcfc;
+    border-left:1px solid #bfbfbf;
+
+}
+
+.base-admin-application-AppPageFrame .frameLabel{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    padding-left:10px;
+    width: 100%;
+    height: 40px;
+    float: left;
+    padding-top: 8px;
+    background-color: #fafafa;
+    border-bottom: solid 1px rgba(218, 222, 211, 0.4);
+
+}
+
+.base-admin-application-AppPageFrame .layoutIcon{
+    float: left;
+    margin-top: 20px;
+    margin-left: 25px;
+    /*height: 84px;*/
+    /*width: 132px;*/
+    /*background-image: url(base/js/admin/css/images/layout02.png);*/
+    /*background-repeat: no-repeat;*/
+    cursor: pointer;
+    border: solid 1px #D8D8D8;
+}
+

@@ -1,0 +1,90 @@
+.base-map-dijit-IdentifyPanel .loading{
+	display:table;
+	vertical-align: middle;
+	color: #1ab394;
+  	text-align:center;
+  	margin: 0 auto;
+  	font-size: 36px;
+} 
+
+
+/* css for dijit DrawBox */
+.jimu-draw-box{
+  -ms-overflow-y:hidden;
+  overflow-y:hidden;
+}
+
+.jimu-draw-box .draw-items{
+  -ms-overflow-y:hidden;
+  overflow-y:hidden;
+}
+
+.jimu-draw-box .draw-items .draw-item{
+  width:40px;
+  height:40px;
+  background-repeat: no-repeat;
+  text-align: center;
+  float: left;
+  margin: 7px;
+  background-position: center center;
+}
+
+.jimu-rtl .jimu-draw-box .draw-items .draw-item{
+  float: right;
+}
+
+.jimu-draw-box .drawings-clear{
+  text-decoration:underline;
+  cursor:pointer;
+  display:block;
+  margin-top:7px;
+}
+
+/* css for DrawBox dijit */
+.jimu-draw-box .draw-item.jimu-state-active,.jimu-draw-box .draw-item:hover{
+  background-color: #c0c0c0;
+}
+
+.jimu-draw-box .point-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_point.png);
+}
+
+.jimu-draw-box .line-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_line.png);
+}
+
+.jimu-draw-box .polyline-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_polyline.png);
+}
+
+.jimu-draw-box .freehand-polyline-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_freehand_polyline.png);
+}
+
+.jimu-draw-box .triangle-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_freehand_polyline.png);
+}
+
+.jimu-draw-box .extent-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_extent.png);
+}
+
+.jimu-draw-box .circle-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_circle.png);
+}
+
+.jimu-draw-box .ellipse-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_ellipse.png);
+}
+
+.jimu-draw-box .freehand-polygon-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_freehand_polygon.png);
+}
+
+.jimu-draw-box .polygon-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_polygon.png);
+}
+
+.jimu-draw-box .text-icon{
+  background-image: url(base/js/map/dijit/css/images/draw_text.png);
+}

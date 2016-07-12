@@ -1,0 +1,32 @@
+.base-admin-application-AppInfoPanel{
+
+}
+
+.base-admin-application-AppInfoPanel .content11{
+
+    color: inherit;
+    padding: 10px 10px 10px 10px;
+    /*border-color: #e7eaec;*/
+    /*border-image: none;*/
+    /*border-style: solid solid none;*/
+    /*border-width: 1px 0px;*/
+}
+
+/*.base-admin-application-AppInfoPanel .region_picker{*/
+    /*position: relative;*/
+    /*height:0px;*/
+    /*overflow: hidden;*/
+    /*margin-top:10px;*/
+    /*width:100%;*/
+/*}*/
+/* .data_monitor_moreFilter_defaultView .region_picker div{*/
+	/*position: relative;*/
+/*} */
+/*.base-admin-application-AppInfoPanel .region_picker > div > a{*/
+    /*display:inline-block;*/
+    /*cursor: pointer;*/
+    /*width:33.3333%;*/
+    /*text-align: center;*/
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+/*}*/

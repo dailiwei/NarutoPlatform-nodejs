@@ -1,0 +1,8 @@
+.base-map-dijit-QueryPanel .loading{
+	display:table;
+	vertical-align: middle;
+	color: #1ab394;
+  	text-align:center;
+  	margin: 0 auto;
+  	font-size: 36px;
+} 

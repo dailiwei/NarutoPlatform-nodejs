@@ -1,0 +1,18 @@
+<div style="width:100%;height:100%" 
+     ms-controller="AppLayoutPrev${id}">
+    <div  style="padding:5px;background-color:#FFF;width:100%;height:40px">请选择页面布局</div>
+   
+     <div  style="width:100%;height:70%;padding-left: 20px;overflow:auto" 
+         >
+        <div class="layoutImage " ms-attr-id="el.layout_id" 
+             ms-active="layoutImageSelect"
+             ms-click="_imageSelect(el.layout_id)" ms-repeat="layoutList">
+            <img ms-src="el.thumbnail" ms-attr-title="el.name">
+        </div>
+    </div>
+     <div style="border-top:dashed 1px #868686;height:15%;width: 100%;min-height: 30px">
+        <div style="padding-left:20px;padding-top: 20px;">
+            <button type="button"   class="btn btn-primary" data-dojo-attach-event="click:_save" style="width: 80px;margin-left:25%">保存</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div style="width:100%;height:100%">
+	<div style="height:30px;width:100%;padding-top:5px;display:inline-block">
+		<label style="height:25px;padding-top:5px;padding-left:5px;display:inline-block" data-dojo-attach-point="divName">绘制</label>
+
+		<div style="float:right;width:55px;margin-right: 5px;margin-top: 4px;cursor: pointer" title="切换到列表模式"  data-dojo-attach-point="changeBtn"
+			  ><i data-dojo-attach-point="changeBtnI" class="fa fa-table"></i>
+		</div>
+	</div>
+	<div data-dojo-attach-point="drawContent" style="display: block">
+		<div data-dojo-attach-point="drawBox" data-dojo-type="base/map/dijit/DrawBoxEx" data-dojo-props='${plotProps}' style="margin-top:5px;"></div>
+		<div data-dojo-attach-point="settingContent" style="width:100%;">
+			<div class="point-section" data-dojo-attach-point="pointSection">
+				<div data-dojo-attach-point="pointSymChooser" data-dojo-type="base/map/dijit/SymbolChooser" data-dojo-props='type:"marker"'></div>
+			</div>
+
+			<div class="line-section" data-dojo-attach-point="lineSection">
+				<div data-dojo-attach-point="lineSymChooser" data-dojo-type="base/map/dijit/SymbolChooser" data-dojo-props='type:"line"'></div>
+			</div>
+
+			<div class="polygon-section" data-dojo-attach-point="polygonSection">
+				<div data-dojo-attach-point="fillSymChooser" data-dojo-type="base/map/dijit/SymbolChooser" data-dojo-props='type:"fill"'></div>
+			</div>
+
+			<div class="text-section" data-dojo-attach-point="textSection">
+				<div data-dojo-attach-point="textSymChooser" data-dojo-type="base/map/dijit/SymbolChooser" data-dojo-props='type:"text"'></div>
+			</div>
+		</div>
+		<div class="btn btn-primary btn-sm" style="float:left;width:55px;margin-left: 5px;margin-top: 4px;" title="拖拽保存的txt可以还原标绘"
+			 data-dojo-attach-event="click:savePlot"  >保存
+		</div>
+	</div>
+	<div data-dojo-attach-point="drawList" style="display: none;padding-top:10px;">
+		<div data-dojo-attach-point="listContainer"></div>
+	</div>
+
+</div>

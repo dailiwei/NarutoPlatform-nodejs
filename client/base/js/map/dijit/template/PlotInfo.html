@@ -1,0 +1,29 @@
+﻿<div style="height:100%;width:100%;padding-left: 10px;padding-right: 10px;padding-top: 10px;">
+	<div style="width:100%;height:40px;">
+		<div class="input-group">
+			<div class="input-group-addon">标绘主题:</div>
+			<input type="text" data-dojo-attach-point="titleDiv" placeholder="请填写主题" class="form-control"  >
+		</div>
+	</div>
+	<div style="width:100%;height:40px;">
+		<div class="input-group">
+			<div class="input-group-addon">标绘类型:</div>
+			<select class="form-control" placeholder="请选择标绘类型" data-dojo-attach-event="change:typeChange" data-dojo-attach-point="typeSelect"  >
+			</select>
+		</div>
+	</div>
+
+	<div style="width:100%;height:80px;">
+		<div class="input-group">
+			<div class="input-group-addon">描述信息:</div>
+			<textarea class="form-control"  data-dojo-attach-point="ntDiv"
+					    placeholder="请填写相关描述信息" rows="3"></textarea>
+		</div>
+	</div>
+	<div style="width:100%;height:40px;padding-top:3px;">
+		<div class="input-group">
+			<div style="margin-left: 20px;width:50px;float:left" class="btn btn-primary"  data-dojo-attach-event="click:save"
+				 type="button" class="form-control">保存</div>
+		</div>
+	</div>
+</div>

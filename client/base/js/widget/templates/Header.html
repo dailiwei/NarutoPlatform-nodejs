@@ -1,0 +1,29 @@
+<div style="width: 100%;height:100%">
+    <nav class=" navbar-richway navbar-toolbar" id="header01" style="margin-bottom: 0px;margin-top:0px;">
+        <div class="container-fluid"  >
+            <div class="navbar-header">
+                <a class="hidden-sm hidden-md " data-dojo-attach-event="mouseover:mouseOverHandler,mouseout:mouseOutHandler">
+                    <img src='${win.WEB_ROOT}base/images/logo.png' style="float:left;margin:5px;height:38px"/>
+                    <span class="navbar-brand" data-dojo-attach-point="app_name"  >中央抗旱业务应用系统V2.0</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-onelv navbar-menu" data-dojo-attach-point="navLinks" id="navLinks" style="letter-spacing: 2px;">
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-md hidden-sm" >
+                    <li class="dropdown" id="menu_self">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">欢迎您,${win.userName} <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li id="a-logout" ><a href="${win.APP_ROOT}logout"><span class="glyphicon glyphicon-log-out"></span> 注销</a></li>
+                            <li id="a-changepwd" ><a href="javascript:void(0);"  ><span class="fa fa-star"></span> 个人中心</a></li>
+                        </ul>
+                    </li>
+<!--                     <li id="menu_warn"> -->
+<!--                         <a href="javascript:void(0);" style="color: #FFF;" class="dropdown-toggle"   id="warn_tag"><i  class="fa fa-list fa-lg"></i>预警</a> -->
+<!--                     </li>  -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,39 @@
+.base-map-widgets-mapRegionSel .region-tab{
+	border-bottom:#ccc 2px solid;
+	padding:3px 0px 0px 0px;
+}
+.base-map-widgets-mapRegionSel .region-box > div{
+	padding:7px 0px 0px 0px;
+}
+.base-map-widgets-mapRegionSel .region-box .region-confirm{
+	width:5em;;text-align:center;cursor:pointer;float:right;background-color: #f8ac59;color:#fff;
+}
+.base-map-widgets-mapRegionSel .region-box > ul{
+	border-top:#ccc 1px solid;padding:3px 0px 0px 0px;list-style: none;min-height:50px;
+	width:100%;
+}
+.base-map-widgets-mapRegionSel .region-box > ul.loading{
+	display:table;
+	vertical-align: middle;
+}
+.base-map-widgets-mapRegionSel .region-box > ul.loading > div {
+	display:table-cell;
+	vertical-align: middle;
+	color: #1ab394;
+  	text-align:center;
+  	margin: 0 auto;
+  	font-size: 36px;
+}
+.base-map-widgets-mapRegionSel .region-box > ul > li{
+	display:inline-block;
+	padding: 0px 7px;
+	cursor: pointer;
+}
+.base-map-widgets-mapRegionSel .region-box > ul > li.active{
+	background-color: #1c84c6;
+	color: #fff;
+}
+.base-map-widgets-mapRegionSel .region-box > ul > li:HOVER{
+	background-color: #1c84c6;
+	color: #fff;
+}

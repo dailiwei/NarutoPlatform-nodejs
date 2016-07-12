@@ -1,0 +1,20 @@
+.app-comp-service-list{
+
+}
+
+.app-comp-service-list .main12{
+    height: 73%;
+    width: 100%;
+    /*background-color: #f3f3f3;*/
+    border-bottom: dashed 1px #888;
+}
+
+.app-comp-service-list .bottom12{
+    height: 27%;
+    width: 100%;
+    /*background-color: #cdcdcd;*/
+
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}

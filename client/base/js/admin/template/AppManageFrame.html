@@ -1,0 +1,50 @@
+<div style="width: 100%;height:100%">
+    <div class="top">
+        <table border="0" style="width: 100%;height:100%"
+                >
+            <tr>
+                <td style="width:30%;padding-left: 10px">
+                     <div style="display: inline-block;color: #888888" data-dojo-attach-point="titleFrameLabel" >创建应用</div>
+                     <div style="display: inline-block;color: #b1b1b1;"  data-dojo-attach-point="appNameNode"  ></div>
+                </td>
+
+                <td style="width:40%">
+                    <div id="app_manag_navStep1" style="position:absolute;color: #1AA4CA;  width:120px;margin-top:-9px;vertical-align: middle;cursor: pointer">
+                        <div> <div class="cirlce cirlceSelect"> <span class="cirlcein">1</span></div>&nbsp;通用设置 <li class="fa fa-chevron-right" style="padding-left:5px"></li></div>
+                    </div>
+                    <div id="app_manag_navStep2" style="position:absolute;color: #CBCBCB;  margin-left:130px;margin-top:-9px;width:120px;vertical-align: middle;cursor: pointer">
+                        <div><div class="cirlce"> <span class="cirlcein">2</span></div>&nbsp;组件选择 <li class="fa fa-chevron-right" style="padding-left:5px"></li></div>
+                    </div>
+                    <div id="app_manag_navStep3" style="position:absolute;color: #CBCBCB;  margin-left:255px;margin-top:-9px;width:120px;vertical-align: middle;cursor: pointer">
+                        <div><div class="cirlce"> <span class="cirlcein">3</span></div>&nbsp;组件设置 <li class="fa fa-chevron-right"　style="padding-left:5px"></li></div>
+                    </div>
+                    <div id="app_manag_navStep4" style="position:absolute;color: #CBCBCB; margin-left:375px;margin-top:-9px; width:120px;vertical-align: middle;cursor: pointer">
+                        <div><div class="cirlce"> <span class="cirlcein">4</span></div>&nbsp;页面配置 <li class="fa fa-chevron-right"　style="padding-left:5px"></li></div>
+                    </div>
+
+                </td>
+                <td style="width:8%">
+
+                </td>
+                <td style="width:7%;padding-left:5px">
+                    <button class="btn btn-default btn-sm" style="width:80px;" type="button" data-dojo-attach-event="click:_cancel"  >取消</button>
+                </td>
+                <!--<td style="width:7%;padding-left:5px;" >-->
+                    <!--<button class="btn btn-primary btn-sm" style="width:80px;display: none" type="button" data-dojo-attach-point="stepLast"   >上一步</button>-->
+                <!--</td>-->
+                <td style="width:7%;padding-left:5px">
+                    <button class="btn btn-primary btn-sm" style="width:80px;display: block" type="button" data-dojo-attach-point="nextStepNode" data-dojo-attach-event="click:_nextStep"  >下一步</button>
+                    <button class="btn btn-success btn-sm" style="width:80px;display: none" type="button" data-dojo-attach-point="finishNode" data-dojo-attach-event="click:_finishCreateApp"  >创建应用</button>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="region">
+        <div class="content" style="display: none;padding: 20px" data-dojo-attach-point="divNode1"></div>
+        <div class="content" style="display: none" data-dojo-attach-point="divNode2"></div>
+        <div class="content" style="display: none" data-dojo-attach-point="divNode3"></div>
+        <div class="content" style="display: none" data-dojo-attach-point="divNode4"></div>
+
+    </div>
+</div>

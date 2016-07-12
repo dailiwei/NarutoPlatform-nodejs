@@ -1,0 +1,17 @@
+<div class="PageAccess" ms-controller="PageAccess${id}">
+    <div class="frameLabel">该页面授权给以下分组：</div>
+    <div class="col-lg-12">
+        <div data-dojo-attach-point="contentDiv">
+            <div class="checkbox" ms-repeat='$groupList'>
+                <label>
+                    <input type='checkbox' ms-duplex="selectedGroup" ms-attr-value='el.roleName' class="checkbox">{{el.roleName}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ms-if="showButton">
+        <div class="col-sm-12">
+            <button class="saveWidget btn btn-primary" ms-click="saveWidget">保存</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+.base-widgets-LeftMenuSide{
+  width: 202px; 
+  height: 100%; 
+  position:absolute;
+  top:50px;
+  left:0;
+  right:auto;
+  bottom:0; 
+  z-index:100;
+  
+}
+
+/* .base-widgets-LeftMenuSide .scroll{ */
+/* /* 	scrollbar-3dlight-color:#FF0033;  说是ie支持*/ */
+/* 	scrollbar-arrow-color:red; */
+/* 	scrollbar-track-color:red;  */
+/* 	scrollbar-darkshadow-color:red; */
+/* 	scrollbar-face-color:red; */
+/* 	scrollbar-highlight-color:red; */
+/* 	scrollbar-shadow-color:red;  */
+/* } */
+.base-widgets-LeftMenuSide .mybox{
+  font-family: "微软雅黑";
+  font-size: 14px;
+  font-weight: bold; 
+  
+}
+.base-widgets-LeftMenuSide .jimu-widget-leftpanel-list-item{
+  color: black;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  font-weight: bold;
+  padding-top:15px;
+  width: 100%;
+  height: 100px; 
+  cursor: pointer;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+.base-widgets-LeftMenuSide .jimu-widget-leftpanel-list-item-imgDiv{
+  width: 48px; 
+  height: 48px;
+  display:inline-block;
+  position:relative;
+}
+.base-widgets-LeftMenuSide .jimu-widget-leftpanel-list-item-imgDiv img{
+ 
+  width: 32px; 
+  height: 32px; 
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.base-widgets-LeftMenuSide .jimu-widget-leftpanel-list-item-select{
+  color: blue; 
+  font-weight: bold;
+}
+.base-widgets-LeftMenuSide .jimu-widget-leftpanel-list-item:hover{
+
+  background-color: #96c5ef  ;
+  color: #1b4974;
+}
+.content-title-tab{
+  /* height:25px; */
+  /* font-weight:normal; */
+  /* font-size:14px; */
+  cursor: pointer; 
+  margin-left:5px;
+  margin-right:5px;
+  /* color:#787878; */
+  /* background-image: url(base/images/tip.png); */
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+}
+.content-title-tab:hover{ 
+  color: blue;
+  background-color:white;
+}
+.content-title-tab-select{
+  color: blue;
+  font-weight:bold;
+  border-bottom: solid;
+}
+.base-widgets-LeftMenuSide .content-title{
+  cursor: pointer; 
+  font-weight: normal;
+  font-size:12px;
+   height:25px;
+  
+}
+.base-widgets-LeftMenuSide .content-title:hover{
+  /*font-weight:bold;*/ 
+  color: blue;
+}

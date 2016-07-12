@@ -1,0 +1,43 @@
+<div class="AddWidgetDialog" 
+     ms-controller="AddDialog${id}">
+     <div class="col-lg-12 config-container">
+     	<div class="panel panel-default">
+  <!-- 		<div class="panel-heading">
+   			 <h3 class="panel-title">添加新的部件</h3>
+  		</div> -->
+  		<div class="panel-body">
+  			<div class="form-horizontal">
+  				<div class="form-group">
+  					<label for="aw_widget" class="form-label col-lg-4">要添加的部件：</label>
+  					<div class="col-lg-8">
+  						<select 
+	        ms-duplex="selected" class="form-control"  id="ad_widget">
+							<option 
+		        ms-repeat="widgets" ms-attr-value="$index">{{el.component_name?el.component_name+'-'+el["#name"]:el["#name"] }}</option>
+
+	        					</select>
+	        				</div>
+	        			</div>
+  			</div>
+       
+    		  	<div class="form-group" 
+    		  	    >
+        				<div class="col-sm-12"> 
+                  <div class="label" ms-if="labelVisible">当前部件没有可配置的参数，请单击保存直接添加。</div>
+         					<button class="saveWidgetbtn btn btn-primary"  ms-if="saveBtnVisible" 
+                          ms-click="saveWidget">保存</button> 
+         					<button class="cancelWidget btn btn-default"  ms-if="cancelBtnVisible" 
+                          ms-click="cancelAdd">取消</button> 
+        				</div>
+       			</div>
+
+	        		
+	        			
+	        		</div>
+  		</div>
+
+     	
+     </div>
+	<div data-dojo-attach-point="widgetConfigDiv">
+	</div>
+</div>

@@ -1,0 +1,20 @@
+﻿<div style="position:relative;width:100%;height:100%;">
+	<div style="width:100%;height:100%" data-dojo-attach-point="textQueryFilter">
+		 <div style="height:60px;width:100%;margin-top:5px;float:left;">
+		   <div style="height:50px;width:100%;"  data-dojo-attach-point="indentifyFilter">
+		       <div data-dojo-attach-point="drawBox" data-dojo-type="base/map/dijit/DrawBox" data-dojo-props='geoTypes:["POINT", "POLYLINE", "POLYGON","CIRCLE","EXTENT"],showClear:false' style="margin-top:5px;"></div>
+		   </div> 
+		 </div>
+		 <div style="height:20px;width:100%;margin-top:2px;float:left;">
+		   <div style="height:20px;width:100%;padding-left:5px;background-color:rgba(128, 128, 128, 0.27);cursor:pointer;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;" data-dojo-attach-event="click:showLayerFilter"  data-dojo-attach-point="layerFilter">
+		        
+		   </div>
+		 </div>
+		 <div style="height:20px;width:100%;margin-top:2px;float:left;">
+		   <div style="height:20px;float:right;font-size:10px;padding-right:5px;" data-dojo-attach-point="featureCount"></div>
+		 </div>
+		 <div data-dojo-attach-point="resultContainer" style="float:left;height:300px;overflow-y:auto;width:100%;   background: #fff; border: 1px solid #e3e3e3;border-radius: 4px;">
+		     <div style="display:none" data-dojo-attach-point="loading" class="loading"><i class='fa fa-spinner fa-spin'></i></div>
+		 </div>
+	</div> 
+</div>

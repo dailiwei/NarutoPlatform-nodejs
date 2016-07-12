@@ -1,0 +1,60 @@
+.base-admin-application-AppPagesConfig{
+
+}
+
+.base-admin-application-AppPagesConfig .mainPanel{
+    position:absolute;
+    height: 100%;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #eef2f5;
+    left:300px;
+    top:0px;
+    bottom: 0px;
+    right: 0px;
+}
+.base-admin-application-AppPagesConfig .leftPanel{
+    position:absolute;
+    left:0;
+    height: 100%;
+    width: 285px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #eef2f5;
+    border-right:1px solid #bfbfbf;
+
+}
+
+
+.base-admin-application-AppPagesConfig .list-item{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    padding-left:30px;
+    padding-right: 10px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    float: left;
+    padding-top: 8px;
+    background-color: #fafafa;
+    border-bottom: solid 1px rgba(218, 222, 211, 0.4);
+
+    /*box-shadow: 1px 1px 1px 1px #fafafa;*/
+
+}
+.base-admin-application-AppPagesConfig .list-item:hover{
+    background-color: #6e99fa;
+}
+
+.base-admin-application-AppPagesConfig .list-item-selected{
+    background-color: #6e99fa;
+}
+
+.base-admin-application-AppPagesConfig .comp_list_item_icon{
+    float: left;
+    margin-top: 3px;
+    height: 27px;
+    width: 37px;
+    background-image: url(base/js/admin/css/images/comp_list_item.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

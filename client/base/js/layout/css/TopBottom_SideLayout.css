@@ -1,0 +1,40 @@
+.base-layout-TopBottom_SideLayout{
+
+}
+
+.base-layout-TopBottom_SideLayout .layout_bottom{
+    height: 73%;
+    width: 100%;
+    background-color: #cdcdcd;
+
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.base-layout-TopBottom_SideLayout .leftPanel{
+    position:absolute;
+    left:0;
+    height: 100%;
+    width: 200px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #fcfcfc;
+    border-right:1px solid #bfbfbf
+
+}
+
+.base-layout-TopBottom_SideLayout .layout_top{
+    height: 27%;
+    width: 100%;
+    background-color: #cdcdcd;
+
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+.base-layout-TopBottom_SideLayout .layout_bottom{
+    width:100%;
+    height: 70%;
+    position: absolute;
+}
+

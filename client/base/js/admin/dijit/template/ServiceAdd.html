@@ -1,0 +1,64 @@
+<div style="width:100%;height:100%;padding: 5px">
+
+    <div class="form-group">
+        <label for="serviceNameLabel">服务列表:</label>
+        <select id="serviceNameLabel" data-dojo-attach-event="change:servieNameChange" data-dojo-attach-point="serviceNameList" class="form-control">
+            <option>---</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="serviceUrlLabel">服务地址:</label>
+        <input type="text" data-dojo-attach-point="serviceUrlLabel" data-dojo-attach-event="onkeyup:_onKeyUp" id="serviceUrlLabel" class="form-control" placeholder="serviceUrl">
+    </div>
+    <div class="form-group">
+        <label for="serviceRolesLabel">角色列表:</label>
+        <select id="serviceRolesLabel" data-dojo-attach-point="serviceRolesList" class="form-control">
+            <option>---</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="serviceRUrlLabel">URL地址:</label>
+        <input type="text" data-dojo-attach-point="serviceRUrlLabel" id="serviceRUrlLabel" class="form-control" placeholder="serviceRUrl">
+    </div>
+    <div class="form-group">
+        <label >权限列表:</label>
+        <div id="serviceQLabel" data-dojo-attach-point="serviceQLabel" class="form-control" style="height:65px">
+            <table style="width: 100%;height:100%" border="0">
+                <tr>
+                    <th align="left">GET</th>
+                    <th align="left">PUT</th>
+                    <th align="left">POST</th>
+                    <th align="left">DELETE</th>
+                </tr>
+                <tr>
+                    <td align="left" style="width: 150px">
+                        <select data-dojo-attach-point="serviceGET" style="width:130px" class="form-control">
+                            <option value="0">允许</option>
+                            <option value="1">禁止</option>
+                        </select>
+                    </td>
+                    <td align="left" style="width: 150px">
+                        <select data-dojo-attach-point="servicePUT" style="width:130px" class="form-control">
+                            <option value="0">允许</option>
+                            <option value="1">禁止</option>
+                        </select>
+                    </td>
+                    <td align="left" style="width: 150px">
+                        <select data-dojo-attach-point="servicePOST" style="width:130px" class="form-control">
+                            <option value="0">允许</option>
+                            <option value="1">禁止</option>
+                        </select>
+                    </td>
+                    <td align="left" style="width: 150px">
+                        <select data-dojo-attach-point="serviceDELETE" style="width:130px" class="form-control">
+                            <option value="0">允许</option>
+                            <option value="1">禁止</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" data-dojo-attach-event="click:_addService" style="float: right">确定</button>
+</div>

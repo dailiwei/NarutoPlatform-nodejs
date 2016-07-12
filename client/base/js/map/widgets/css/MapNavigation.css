@@ -1,0 +1,36 @@
+.base-map-widgets-MapNavigation{
+    background-color: #ccc;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    text-align: center;
+    font-family: verdana,helvetica;
+}
+
+.base-map-widgets-MapNavigation .zoom{
+    width: 30px;
+    height: 30px;
+}
+
+.base-map-widgets-MapNavigation .zoom:hover{
+    background-color: #848385;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.base-map-widgets-MapNavigation .zoom.jimu-state-disabled{
+    color: #ddd;
+}
+
+.base-map-widgets-MapNavigation.vertical .zoom-in{
+    border-bottom: 1px solid #57585A;
+}
+
+.base-map-widgets-MapNavigation.horizontal .zoom-in{
+    border-right: 1px solid #57585A;
+}

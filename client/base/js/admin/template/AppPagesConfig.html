@@ -1,0 +1,76 @@
+<div style="width:100%;height:100%">
+    <div class="leftPanel" data-dojo-attach-point="leftContainer">
+        <div style="height:45px;width:100%">
+            <div style="padding-left:20px;padding-top: 6px;">
+                <!--<div class="btn-toolbar" role="toolbar" aria-label="菜单操作">-->
+                <!--<div class="btn-group" role="group" aria-label="添加分组">添加分组</div>-->
+                <!--<div class="btn-group" role="group" aria-label="添加页面">添加页面</div>-->
+                <!--<div class="btn-group glyphicon glyphicon-trash" role="group" aria-label="删除"></div>-->
+                <!--</div>-->
+                <!--<div class="btn-group" role="group" aria-label="Basic example">-->
+                <!--<button type="button" class="btn btn-default">添加分组</button>-->
+                <!--<button type="button" class="btn btn-default">添加页面</button>-->
+                <!--<button type="button" class="btn btn-default">Right</button>-->
+                <!--</div>-->
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group" aria-label="菜单操作">
+                        <!--<button type="button" class="btn btn-default" data-dojo-attach-event="click:_addMenuGroup"  >添加分组</button>-->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                添加组 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" style="background-color: #f3f3f3" role="menu">
+                                <li><a data-dojo-attach-event="click:_addMenuGroup">添加组</a></li>
+                                <li><a data-dojo-attach-event="click:_addRootMenuGroup">添加根组</a></li>
+                            
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                添加页 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" style="background-color: #f3f3f3" role="menu">
+                                <li><a data-dojo-attach-event="click:_addMenuPage">添加页面</a></li>
+                                <li><a data-dojo-attach-event="click:_addLinkPage">添加外部链接</a></li>
+                                <li><a data-dojo-attach-event="click:_addRootMenuPage">添加根页面</a></li>
+                                 <li><a data-dojo-attach-event="click:_addRootMenuLink">添加根链接</a></li> 
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-default" title="删除页面" data-dojo-attach-event="click:_addMenuDel" style="height:34px">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="菜单操作2">
+                        <button type="button" class="btn btn-default" title="将当前选中的页面,设置默认页面" data-dojo-attach-event="click:_setDefaultPage" style="height:34px">
+                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <!--<div class="btn-group" style="padding-top:5px" role="group" aria-label="菜单操作2">-->
+                <!--<button type="button" class="btn btn-default" data-dojo-attach-event="click:_addMenuGroup"  >添加根分组</button>-->
+                <!--<button type="button" class="btn btn-default" data-dojo-attach-event="click:_setDefaultPage"  >设置默认页</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div style="background-color: #f9f9f9;width:100%;">
+            <div style="width: 100%;position:absolute;overflow-y:auto;top:50px;bottom:50px;" data-dojo-attach-point="treeNode">
+            </div>
+            <!--<div class="list-item list-item-selected">-->
+            <!--<div class="comp_list_item_icon"></div>-->
+            <!--综合监视-->
+            <!--</div>-->
+            <!--<div class="list-item">-->
+            <!--<div class="comp_list_item_icon"></div>-->
+            <!--图形监控-->
+            <!--</div>-->
+            <!--<div class="list-item">-->
+            <!--<div class="comp_list_item_icon"></div>-->
+            <!--水情报表-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="mainPanel" data-dojo-attach-point="mainContainer">
+        <div style="float: left;width: 100%;height:100%;" data-dojo-attach-point="contentDiv">
+        </div>
+    </div>
+</div>

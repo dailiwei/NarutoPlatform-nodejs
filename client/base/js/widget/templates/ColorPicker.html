@@ -1,0 +1,47 @@
+<DIV style="height:100%; overflow-x:hidden;">
+<!--
+/*
+ * Licensed Materials - Property of IBM
+ *
+ * 5725-D69
+ *
+ * (C) Copyright IBM Corp. 2013 All rights reserved.
+ *
+ * US Government Users Restricted Rights - Use, duplication or
+ * disclosure restricted by GSA ADP Schedule Contract with
+ * IBM Corp.
+ */
+-->
+	<DIV data-dojo-attach-point="_widgetDiv"
+		data-dojo-props="id:'widget_${id}'"
+		class="dijitReset idxComposite"
+		style="margin:0px; padding:0px;">
+		
+		<DIV class="idxLabel" 
+			data-dojo-attach-point="labelWrap"
+			style="margin:0px; padding:0px;">
+			<SPAN class="idxRequiredIcon">*&nbsp;</SPAN><LABEL for="${id}_button" data-dojo-attach-point="compLabelNode"></LABEL>
+		</DIV>
+		
+		<DIV class="dijitInline" data-dojo-attach-point="fieldWrap">
+			<DIV data-dojo-attach-point='stateNode,oneuiBaseNode' class="dijit dijitReset dijitInline dijitLeft" role="presentation">
+				<DIV class="dijitReset dijitInputField dijitInputContainer">
+					<DIV data-dojo-attach-point="_buttonDiv"
+						style="margin:0px; padding:0px;">
+					</DIV>
+				</DIV>
+			</DIV>
+			<DIV class="idxUnit dijitInline dijitHidden" data-dojo-attach-point="compUnitNode"></DIV>
+			<DIV class='dijitReset dijitValidationContainer dijitInline' 
+				data-dojo-attach-point="iconNode"
+				style="margin-top: 2px;">
+				<DIV class='dijitValidationIcon'>
+					<INPUT class="dijitReset dijitInputField dijitValidationInner" value="&#935; " type="text" tabindex="-1" readonly="readonly" role="presentation"/>
+				</DIV>
+			</DIV>
+			<DIV class="dijitHidden idxHintOutside" data-dojo-attach-point="compHintNode">
+			</DIV>
+		</DIV>
+		
+	</DIV>
+</DIV>

@@ -1,0 +1,105 @@
+.app-item-node{
+  width: 100%;
+  height: 100%;
+  background-color: #c4ccd2;
+
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px #767676;
+
+}
+
+.app-item-node:hover{
+  box-shadow: 0px 0px 2px 2px #2598c1;
+}
+
+.app-item-node.error{
+  box-shadow: 0px 0px 1px 1px #c10918;
+}
+
+
+.app-item-node .main{
+  height: 73%;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.app-item-node .bottom{
+  height: 27%;
+  width: 100%;
+  background-color: #969696;
+
+  font-size: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.app-item-node .up{
+  height: 75%;
+  width: 100%;
+
+  padding-top:15px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+
+.app-item-node .down{
+  height: 25%;
+  width: 100%;
+}
+.app-item-node .state{
+  height: 32px;
+  width: 32px;
+  background-image: url(base/js/admin/dijit/css/images/ICN-TB_Results-SEL.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.app-item-node .icon_run{
+  height: 32px;
+  width: 32px;
+  background-image: url(base/js/admin/dijit/css/images/app_stop.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.app-item-node .icon_run:hover{
+  background-color: #e2e2e2;
+}
+
+.app-item-node .icon_stop{
+  height: 32px;
+  width: 32px;
+  background-image: url(base/js/admin/dijit/css/images/app_run.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.app-item-node .icon_stop:hover{
+  background-color: #e2e2e2;
+}
+
+.app-item-node .label{
+  cursor: pointer;
+  height: 20px;
+  width:30%;
+  color: #22b9dd;
+  font-size: 14px;
+
+  /*font-weight: lighter;*/
+  font-weight: 200;
+}
+
+.app-item-node .icon_delete{
+  background-image: url(base/js/admin/dijit/css/images/app_delete.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  float: right; 
+  height: 20px; 
+  width: 20px;
+  margin-right:20px;
+  display: none;
+}
+
+.app-item-node .icon_delete.icon_delete_selected{
+  display: block;
+}

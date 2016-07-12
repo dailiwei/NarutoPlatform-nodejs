@@ -1,0 +1,18 @@
+<div class="PageLayoutConfig" ms-controller="PageLayoutConfig${id}">
+    <div class="col-lg-12">
+        <ol class="breadcrumb">当前路径：
+            <li ms-repeat="breadcrumb"><span 
+                ms-if="$index>=breadcrumb.length -5">{{el}}</span><span 
+                ms-if="$index<breadcrumb.length -5">..</span></li>
+        </ol>
+    </div>
+    <div data-dojo-attach-point="contentDiv" style="position: absolute; top: 35px; left: 0px; right: 0px; bottom: 0px; overflow-y: auto;background:#fff;"></div>
+    <div id="modalDiv${id}" data-dojo-attach-point="modalDiv" style="background-color:#f3f3f4; ">
+        <div data-dojo-attach-point="modalContent"></div>
+    </div>
+ <!--    <div class="form-group" ms-if="showButton">
+        <div class="col-sm-12">
+            <button class="saveWidget btn btn-primary" ms-click="saveWidget">保存</button>
+        </div>
+    </div> -->
+</div>

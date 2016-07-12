@@ -1,0 +1,52 @@
+.base-map-dijit-ListItem { 
+	border-bottom: 1px solid #e7eaec;
+}
+.base-map-dijit-ListItem:hover{
+	background-color:rgba(105, 105, 105, 0.05);
+	cursor:pointer;
+}
+.base-map-dijit-ListItem .icon_point{
+  height: 48px;
+  width: 48px;
+  background-image: url(base/js/map/dijit/css/images/draw_point.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.base-map-dijit-ListItem .icon_polyline{
+  height: 48px;
+  width: 48px;
+  background-image: url(base/js/map/dijit/css/images/draw_polyline.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.base-map-dijit-ListItem .icon_polygon{
+  height: 48px;
+  width: 48px;
+  background-image: url(base/js/map/dijit/css/images/draw_polygon.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.base-map-dijit-ListItem .icon_map_polygon{
+  height: 27px;
+  width: 29px;
+  background-image: url(base/js/map/dijit/css/images/icon_zone_info_card.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.base-map-dijit-ListItem .icon_map_point{
+  height: 39px;
+  width: 39px;
+  background-image: url(base/js/map/dijit/css/images/icon_blue_point.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.base-map-dijit-ListItem .icon_map_line{
+  height: 32px;
+  width: 36px;
+  background-image: url(base/js/map/dijit/css/images/icon_green_line.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

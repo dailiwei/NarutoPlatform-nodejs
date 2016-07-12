@@ -1,0 +1,19 @@
+
+.AppPageLinkFrame .frameLabel{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    padding-left:10px;
+    width: 100%;
+    height: 40px;
+    float: left;
+    padding-top: 8px;
+    background-color: #fafafa;
+    border-bottom: solid 1px rgba(218, 222, 211, 0.4);
+
+}
+
+.AppPageLinkFrame .form-label,.AppPageLinkFrame .col-lg-9 label{
+    font-weight: normal;
+  font-family: 微软雅黑;
+}

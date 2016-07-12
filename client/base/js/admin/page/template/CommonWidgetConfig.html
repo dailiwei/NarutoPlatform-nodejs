@@ -1,0 +1,76 @@
+<div id="CommonWidgetConfig${id}" class="CommonWidgetConfig" ms-controller="CommonWidgetConfig${id}">
+    <div class="col-lg-12 config-container">
+        <div class="panel panel-default" style="box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);border-bottom-width: 0px;">
+            <!--      <div class="panel-heading"> 
+      <h3 class="panel-title">编辑部件</h3> 
+     </div>  -->
+            <div class="panel-body" style="/*min-height:670px;*/">
+                <form class="form-horizontal" name="commonForm${id}" id="commonForm${id}">
+                    <fieldset ms-if="showParam">
+                        <!--   <legend>参数设置</legend> -->
+                        <div class="error_box"></div>
+                        <div ms-controller="ctrl_parameters${id}">
+                            <div class="common_widget_parameters" ms-click="event"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset ms-if="hasRegions">
+                        <!--  <legend>扩展点</legend> -->
+                        <div class="common_widget_regions" ms-controller="ctrl_regions${id}">
+                            <div class="row" ms-repeat="regionArray">
+                                <div class="col-md-12">
+                                    <div class="row" style="padding-left:15px;">
+                                        <div class="regionLabel">{{el.name}}</div>
+                                    </div>
+                                    <div class="row" style="padding-left:15px;">
+                                        <div class="col-lg-3 col-md-6 widget-box-img" ms-click="openAddDialog(el,$index)" style="cursor: pointer;" ms-visible="!el.Maximum || el.Maximum == -1 || el.Maximum > el.widgets.size()">
+                                            <img src="base/images/admin/page/add.png" style="max-width:100%;width:100%;height:100%;" title="新增部件到该视图">
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 widget-box" ms-repeat-elm="el.widgets">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="widget_toolbar"><a ms-visible="!$first" ms-click="move_left(el,elm,$index)" title="向前移动"><i class="fa fa-arrow-circle-left"></i></a>
+                                                        <a ms-visible="!$last" ms-click="move_right(el,elm,$index)" title="向后移动"><i class="fa fa-arrow-circle-right"></i>
+                                                       </a>
+                                                        <a class="close-link" ms-click="openModifyDialog(elm,$outer,$index)" title="修改该部件">
+                                                            <i class="fa fa-wrench"></i>
+                                                        </a>
+                                                        <a class="close-link" ms-click="remove(el,$index)" title="删除该部件">
+                                                            <i class="fa fa-times"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 col-xs-4 col-lg-4">
+                                                    <div class="box-img">
+                                                        <img alt="image" class="m-t-xs img-responsive" ms-src="getImage(elm.parameters.icon)" style="max-width:100%;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 col-xs-8 col-lg-8 box-label">
+                                                    <!--{{elm.parameters.i18nLabel || elm["#name"]}}  -->
+                                                    <span class="label box-label">{{elm.parameters.label || elm.parameters.i18nLabel || elm["#name"]}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group" ms-if="showButton">
+                        <div class="col-sm-12" ms-if="showNoContent">
+                            <label>所选部件没有可配置的参数，请点击“保存”按钮来保存当前部件。</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <button class="saveWidget btn btn-primary" ms-click="saveWidget" type="submit">保存</button>
+                            <button class="cancelWidget btn btn-default" ms-click="cancelWidget">取消</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="modalDiv${id}" data-dojo-attach-point="modalDiv" style="background-color:#f3f3f4; ">
+            <div data-dojo-attach-point="modalContent"></div>
+        </div>
+    </div>
+</div>

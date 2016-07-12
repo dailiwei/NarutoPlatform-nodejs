@@ -1,0 +1,65 @@
+.base-admin-application-AppCompsSetting{
+
+}
+
+.base-admin-application-AppCompsSetting .mainPanel{
+    position:absolute;
+    height: 100%;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #a9adb2;
+    left:300px;
+    top:0px;
+    bottom: 0px;
+    right: 0px;
+    padding-top: 15px;
+}
+.base-admin-application-AppCompsSetting .leftPanel{
+    position:absolute;
+    left:0;
+    height: 100%;
+    width: 300px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #fcfcfc;
+    border-right:1px solid #bfbfbf;
+
+    /*box-shadow: 0 0 10px #888;*/
+    box-shadow: 0px 0px 2px 2px #a0a0a0;
+
+}
+
+
+.base-admin-application-AppCompsSetting .list-item{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    padding-left:30px;
+    padding-right: 10px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    float: left;
+    padding-top: 8px;
+    background-color: #fafafa;
+    border-bottom: solid 1px rgba(218, 222, 211, 0.4);
+
+    /*box-shadow: 1px 1px 1px 1px #fafafa;*/
+
+}
+.base-admin-application-AppCompsSetting .list-item:hover{
+    background-color: #00afd9;
+}
+
+.base-admin-application-AppCompsSetting .list-item-selected{
+    background-color: #00afd9;
+}
+
+.base-admin-application-AppCompsSetting .comp_list_item_icon{
+    float: left;
+    margin-top: 1px;
+    margin-right:10px;
+    height: 20px;
+    width: 20px;
+    /*background-image: url(base/js/admin/css/images/comp_list_item.png);*/
+    /*background-repeat: no-repeat;*/
+    cursor: pointer;
+}

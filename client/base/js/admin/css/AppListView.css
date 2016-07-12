@@ -1,0 +1,42 @@
+.base-admin-AppListView {
+    width: 100%;
+    height: 100%;
+    font-family: 黑体;
+    font-weight: 200;
+}
+
+.base-admin-AppListView .content {
+    width: 100%;
+    height: 100%;
+}
+
+.base-admin-AppListView .top {
+    width: 100%;
+    height: 42px;
+    padding-top: 3px;
+    background-color: #e7e9eb;
+    /*box-shadow:  0 0 3px #888;*/
+    border-bottom: solid 1px rgba(136, 136, 136, 0.36);
+    vertical-align: middle;
+}
+
+.base-admin-AppListView .region {
+    /*height: 100%;*/
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+    width: 100%;
+    /*margin-bottom: 50px;*/
+    /*bottom: 0px;*/
+    /*background-color: #ebebeb;*/
+    /*box-shadow:  8px 0 0 #888;*/
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: #d9dfe5;
+}
+
+.base-admin-AppListView .item {
+    float: right;
+}

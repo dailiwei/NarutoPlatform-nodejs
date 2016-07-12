@@ -1,0 +1,22 @@
+<div style=" width: 187px; height: 35px;right:30px;"> 
+	<button  data-dojo-attach-event="click:showBox" title="地图工具" type="button" class="btn btn-default"  style="width: 35px; height: 35px;top: 300px;  right:30px;position: absolute;">
+	  <span class="glyphicon glyphicon-gift" style="margin-left: -3px;" aria-hidden="true"></span>  
+	</button> 
+    <div class="btn-group map_toolbox_container" role="group"  data-dojo-attach-point="toolBoxContainer">
+    	<button data-dojo-attach-event="click:showBaseTool" type="button" class="btn btn-default">工具</button>
+  		<button type="button" class="btn btn-default">分析</button>  
+  		<button type="button" class="btn btn-default">标绘</button>
+    </div>
+    <div class="base_tool_container text-center" data-dojo-attach-point="base_tool_container">
+    	<div class="btn-group"> 
+    		<button type="button" class="btn btn-default" title="放大"><span aria-hidden="true" class="map-icon-zoom-in-alt"></span> </button>
+    		<button type="button" class="btn btn-default" title="缩小"><span aria-hidden="true" class="map-icon-zoom-out-alt"></span> </button>
+    		<button type="button" class="btn btn-default" title="平移"><span aria-hidden="true" class="glyphicon glyphicon-move"></span> </button>
+    		<button type="button" class="btn btn-default"><span aria-hidden="true" class="glyphicon glyphicon-search"></span> </button>
+    		<button type="button" class="btn btn-default"><span aria-hidden="true" class="glyphicon glyphicon-map-marker"></span> </button>
+    		<button data-dojo-attach-event="click:measureLine" type="button" class="btn btn-default" title="直线测距"><span aria-hidden="true" class="glyphicon glyphicon-resize-horizontal"></span> </button>
+    		<button data-dojo-attach-event="click:measureArea" type="button" class="btn btn-default" title="面积测量"><span aria-hidden="true" class="glyphicon glyphicon-retweet"></span> </button>
+    		<button data-dojo-attach-event="click:fullScreen" type="button" class="btn btn-default" title="全屏展示"><span aria-hidden="true" class="map-icon-fullscreen"></span> </button>
+    	</div> 
+    </div>  
+</div> 

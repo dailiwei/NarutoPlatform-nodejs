@@ -1,0 +1,13 @@
+{
+	"name": "base",
+	"version": "2.0",
+	"main": "mainMin",
+	"dependencies": {
+		"dojo": "",
+		"dijit": "",
+		"dojox": ""
+	},
+	"description": "base",
+	"bugs": "",
+	"dojoBuild": "package.js"
+}

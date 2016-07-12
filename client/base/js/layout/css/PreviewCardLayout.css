@@ -1,0 +1,27 @@
+.base.layout.PreviewCardLayout .mainPanel{
+	height:0px;
+	width:0px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #eef2f5;
+}
+.base.layout.PreviewCardLayout .leftPanel{
+	height:0px;
+	width:0px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #fcfcfc;
+    border-right:1px solid #bfbfbf
+}
+.base.layout.PreviewCardLayout .topPanel{
+	height:0px;
+	width:0px;
+    /*border: solid 1px #bfbfbf;*/
+    border-bottom:1px solid #bfbfbf
+}
+.base.layout.PreviewCardLayout .bottomPanel{
+	float:left;
+	height:0px;
+	width:0px;
+    /*border: solid 1px #bfbfbf;*/
+    border-bottom:1px solid #bfbfbf
+}
+

@@ -1,0 +1,31 @@
+/* css for dijit DrawBox */
+.jimu-draw-box{
+  -ms-overflow-y:hidden;
+  overflow-y:hidden;
+}
+
+.jimu-draw-box .draw-items{
+  -ms-overflow-y:hidden;
+  overflow-y:hidden;
+}
+
+.jimu-draw-box .draw-items .draw-item{
+  width:40px;
+  height:40px;
+  background-repeat: no-repeat;
+  text-align: center;
+  float: left;
+  margin: 7px;
+  background-position: center center;
+}
+
+.jimu-rtl .jimu-draw-box .draw-items .draw-item{
+  float: right;
+}
+
+.jimu-draw-box .drawings-clear{
+  text-decoration:underline;
+  cursor:pointer;
+  display:block;
+  margin-top:7px;
+}

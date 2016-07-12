@@ -1,0 +1,32 @@
+<div style="width: 100%;height:100%" class="AppPageMenuFrame">
+    <div style="padding-left: 30px; width:100%;height:50%;padding-top:5px; ">
+        <form class="form-horizontal col-lg-9">
+            <div class="form-group">
+                <div class="col-lg-3"><label class="frame-label" style="float:right">基础信息<span title="获取pageId到剪切板" style="cursor:pointer;" class="fa fa-info-circle" data-dojo-attach-event="click:_getPageId"></span></label></div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-lg-3 form-label control-label">名称:</label>
+                <div class="col-lg-9">
+                    <input type="text" class="form-control" value="" data-dojo-attach-point="nameNode" data-dojo-attach-event="onkeyup: _onKeyUp,onfocus:_onFocus" id="name" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-3 form-label control-label" for="vis">应用中可见:</label>
+                <div class="col-lg-9" style="padding-top: 7px;">
+                    <input data-dojo-attach-point="pageVisNode" type="checkbox" checked id="vis">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description" class="col-lg-3 form-label control-label">描述:</label>
+                <div class="col-lg-9">
+                    <textarea class="form-control" value="描述说明信息" data-dojo-attach-point="ctNode" cols="6" rows="6" id="description" name="description"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-3">
+                    <button type="button" class="btn btn-primary" style="width: 80px;float:right;" data-dojo-attach-event="click:_savePage">保存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

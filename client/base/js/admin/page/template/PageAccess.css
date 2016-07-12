@@ -1,0 +1,11 @@
+.PageAccess {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+
+}
+.PageAccess .label{
+	font-size: 14px;
+	font-family: 微软雅黑;
+}

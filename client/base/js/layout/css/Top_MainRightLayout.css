@@ -1,0 +1,60 @@
+.base-layout-Top_MainRightLayout .topPanel{
+    height:60px;
+    bottom:auto;
+    right:0px;
+    left:0px;
+    width:auto;
+    position: absolute;
+    /*background-color: #eef2f5;*/
+}
+.base-layout-Top_MainRightLayout .mainPanel{
+    position:absolute;
+    height: 100%;
+    /*     border-right: solid 1px #DADADA; */
+    background-color: #eef2f5;
+    left:0px;
+    top:0px;
+    bottom: 0px;
+    right: 358px;
+}
+.base-layout-Top_MainRightLayout .mainItemPanel{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    /*     border-right: solid 1px #DADADA; */
+    left:0px;
+    top:0px;
+    bottom: 0px;
+    right: 0px;
+}
+.base-layout-Top_MainRightLayout .changeBtn{
+    position:absolute;
+    height: 30px;
+    width:100px
+left:auto;
+    top:5px;
+    bottom: auto;
+    right: 5px;
+}
+
+.base-layout-Top_MainRightLayout .sidePanel{
+    position:absolute;
+    height: 100%;
+    border: solid 4px rgba(255, 255, 255, 0.33);
+    background-color: #eef2f5;
+    cursor: pointer;
+    right: 350px;
+    width:8px;
+}
+
+.base-layout-Top_MainRightLayout .rightPanel{
+    position:absolute;
+    right:0;
+    height: 100%;
+    width: 350px;
+    /*border: solid 1px #bfbfbf;*/
+    background-color: #fcfcfc;
+    border-right:1px solid #bfbfbf
+
+}
+

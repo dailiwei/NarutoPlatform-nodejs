@@ -1,0 +1,35 @@
+<div style="width:100%;height:100%">
+    <div class="mainPanel" style="height: 100%;overflow: hidden;" data-dojo-attach-point="mainContainer">
+        <div class="mainItemPanel" data-dojo-attach-point=map1 style="background-color:white"></div>
+        <div class="mainItemPanel" data-dojo-attach-point="map2" style="background-color:white"></div>
+
+        <div class="changeBtn" data-dojo-attach-point="changeBtn" style="display:none;z-index:101">
+            <div class="btn-group" style="padding-top:5px" role="group" aria-label="xx">
+                <button type="button" data-dojo-attach-point="changeSVG" data-dojo-attach-event="click:showSVG"
+                        class="btn btn-default active">概化图
+                </button>
+                <button type="button" data-dojo-attach-point="changeGIS" data-dojo-attach-event="click:showGIS"
+                        class="btn btn-default">地图
+                </button>
+            </div>
+        </div> 
+
+        <div data-dojo-attach-point="bottomDiv" style="border-radius:2px; width: 100%;display:none; height:255px;bottom:0px; right:1px;left:1px; z-index: 99;position: absolute;">
+            <div style="width:100%;height:100%;background-color:white;border-top:1px solid #888;">
+                    <span data-dojo-attach-event="click:bottomClose" style="position:absolute;right:5px;z-index:40;">
+                         <i style="cursor:pointer" title="关闭" data-dojo-attach-point="iconNode" class="fa fa-close"></i>
+                    </span>
+
+                <div style="height:255px;">
+                    <div style="width:100%;height:100%" data-dojo-attach-point="chartContainer"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="sidePanel" style="height: 100%;" data-dojo-attach-event="click:_changeState"
+         data-dojo-attach-point="splitNode"></div>
+
+    <div class="rightPanel" style="height: 100%" data-dojo-attach-point="rightContainer"></div>
+</div>
