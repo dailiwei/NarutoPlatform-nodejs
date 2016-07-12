@@ -1,0 +1,2193 @@
+[{
+    "component_name": "基础组件",
+    "component_id": "Base",
+    "component_description": "提供平台运行基础显示控件，服务以及页面。平台运行的基础",
+    "component_category": "Base",
+    "component_package_name": "base",
+    "component_path": "base/js",
+    "component_thumbnail": "base/images/admin/components/base_info.png",
+    "config_module": null,
+    "layouts": [{
+        "layout_id": "Base.BlankLayout",
+        "name": "空白布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/BlankLayout.png",
+        "widget_id": "Base.BlankLayout"
+    }, {
+        "layout_id": "Base.BootstrapLayout",
+        "widget_id": "Base.BootstrapLayout",
+        "name": "Bootstrap 布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/BootstrapLayout.png"
+    }, {
+        "layout_id": "Base.FloatLayout",
+        "widget_id": "Base.FloatLayout",
+        "name": "浮动布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/FloatLayout.png"
+    }, {
+        "layout_id": "Base.LeftMainLayout",
+        "widget_id": "Base.LeftMainLayout",
+        "name": "左-主布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/LeftMainLayout.png"
+    }, {
+        "layout_id": "Base.MainBottom_RightLayout",
+        "widget_id": "Base.MainBottom_RightLayout",
+        "name": "主-底-右布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/MainBottom_RightLayout.png"
+    }, {
+        "layout_id": "Base.MainBottomLayout",
+        "widget_id": "Base.MainBottomLayout",
+        "name": "主-底布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/MainBottomLayout.png"
+    }, {
+        "layout_id": "Base.MainRightLayout",
+        "widget_id": "Base.MainRightLayout",
+        "name": "主-右布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/MainRightLayout.png"
+    }, {
+        "layout_id": "Base.Left_MainBottomLayout",
+        "widget_id": "Base.Left_MainBottomLayout",
+        "name": "左-主-底布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/Left_MainBottomLayout.png"
+    }, {
+        "layout_id": "Base.TopMain_RightLayout",
+        "widget_id": "Base.TopMain_RightLayout",
+        "name": "顶-主-右布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/TopMain_RightLayout.png"
+    }, {
+        "layout_id": "Base.TopMainLayout",
+        "widget_id": "Base.TopMainLayout",
+        "name": "顶-主布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/TopMainLayout.png"
+    }, {
+        "layout_id": "Base.ChessBoardLayout",
+        "name": "棋盘布局",
+        "description": "",
+        "thumbnail": "base/images/admin/layout/ChessBoardLayout.png",
+        "widget_id": "Base.ChessBoardLayout"
+    }],
+    "styles": [{
+        "style_id": "Dark",
+        "name": "Dark",
+        "description": "",
+        "classes": "dark oneui",
+        "resources": [
+            "base/idx/themes/oneuidark/oneuidark.css"
+        ]
+    }, {
+        "style_id": "Grey",
+        "name": "Grey",
+        "description": "",
+        "classes": "grey oneui",
+        "resources": [
+            "base/idx/themes/oneui/oneui.css",
+            "base/idx/themes/oneuidark/oneuidark.css",
+            "base/idx/themes/oneuidarkgrey/oneuidark.css"
+        ]
+    }, {
+        "style_id": "Blank",
+        "name": "Blank",
+        "description": "",
+        "classes": "",
+        "resources": [
+            "base/bootstrap/css/bootstrap.min.css",
+            "base/css/adminConsole.css"
+        ]
+    }],
+    "widgets": [{
+        "widget_id": "Base.ChessBoardLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "棋盘布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/ChessBoardLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main"
+        ],
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": -1,
+                "widget_types": [
+                    "dashboard_widget"
+                ]
+            }
+        },
+        "#parametersMeta": {
+            "row": {
+                "defaultValue": 4,
+                "rules": "required",
+                "displayLabel": "行数",
+                "inputType": "datarange",
+                "datarange": [
+                    1,
+                    20
+                ]
+            },
+            "column": {
+                "defaultValue": 4,
+                "rules": "required",
+                "displayLabel": "列数",
+                "inputType": "datarange",
+                "datarange": [
+                    1,
+                    20
+                ]
+            },
+            "margin": {
+                "defaultValue": 5,
+                "rules": "required",
+                "displayLabel": "外边距",
+                "inputType": "datarange",
+                "datarange": [
+                    0,
+                    20
+                ]
+            }
+        }
+
+    }, {
+        "widget_id": "Base.Chess",
+        "#name": "棋子",
+        "description": "",
+        "#widget_type": [
+            "dashboard_widget"
+        ],
+        "module": {
+            "moduleName": "base/dashboard/Chess",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "xspan": {
+                "defaultValue": 4,
+                "rules": "required",
+                "displayLabel": "横跨格数",
+                "inputType": "datarange",
+                "datarange": [
+                    1,
+                    4
+                ]
+            },
+            "yspan": {
+                "defaultValue": 4,
+                "rules": "required",
+                "displayLabel": "纵跨格数",
+                "inputType": "datarange",
+                "datarange": [
+                    1,
+                    4
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.Previewcard.PreviewCardLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "预览面板布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/PreviewCardLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "top",
+            "bottom"
+        ],
+        "#regionsMeta": {
+            "top": {
+                "id": "top",
+                "name": "上视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "previewcard_view"
+                ]
+            },
+            "bottom": {
+                "id": "bottom",
+                "name": "下视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "previewcard_view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.Previewcard.PreviewCardOneLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "预览面板布局One",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/PreviewCardOneLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "view"
+        ],
+        "#regionsMeta": {
+            "view": {
+                "id": "view",
+                "name": "视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "previewcard_view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.BlankLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "空白布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/BlankLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "view"
+        ],
+        "thumbnail": "base/images/admin/layout/BlankLayout.png",
+        "#regionsMeta": {
+            "view": {
+                "id": "view",
+                "name": "视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.FloatLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "浮动布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/FloatLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "view",
+            "panel",
+            "task"
+        ],
+        "thumbnail": "base/images/admin/layout/FloatLayout.png",
+        "#regionsMeta": {
+            "view": {
+                "id": "view",
+                "name": "视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "panel": {
+                "id": "panel",
+                "name": "固定面板",
+                "Maximum": -1,
+                "widget_types": [
+                    "panel_container",
+                    "view"
+                ]
+            },
+            "task": {
+                "id": "task",
+                "name": "浮动面板",
+                "Maximum": 1,
+                "widget_types": [
+                    "controller",
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.BootstrapLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "Bootstrap布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/BootstrapLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "left"
+        ],
+        "thumbnail": "base/images/admin/layout/BootstrapLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "left": {
+                "id": "left",
+                "name": "左视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.LeftMainLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "左-主布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/LeftMainLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "left"
+        ],
+        "thumbnail": "base/images/admin/layout/LeftMainLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "left": {
+                "id": "left",
+                "name": "左视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.MainBottom_RightLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "主-底-右布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/MainBottom_RightLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "bottom",
+            "right"
+        ],
+        "thumbnail": "base/images/admin/layout/MainBottom_RightLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "bottom": {
+                "id": "bottom",
+                "name": "底视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "right": {
+                "id": "right",
+                "name": "右视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.Left_MainBottomLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "左-主-底布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/Left_MainBottomLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "bottom",
+            "left"
+        ],
+        "thumbnail": "base/images/admin/layout/Left_MainBottomLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "bottom": {
+                "id": "bottom",
+                "name": "底视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "left": {
+                "id": "left",
+                "name": "左视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.MainBottomLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "主-底布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/MainBottomLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "bottom"
+        ],
+        "thumbnail": "base/images/admin/layout/MainBottomLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "bottom": {
+                "id": "bottom",
+                "name": "底视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.Left_TopMainLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "左-顶-主布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/Left_TopMainLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "left",
+            "top"
+        ],
+        "thumbnail": "base/images/admin/layout/Left_TopMainLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "left": {
+                "id": "left",
+                "name": "左视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "top": {
+                "id": "top",
+                "name": "顶视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.TopMain_RightLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "顶-主-右布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/TopMain_RightLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "right",
+            "top"
+        ],
+        "thumbnail": "base/images/admin/layout/TopMain_RightLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "right": {
+                "id": "right",
+                "name": "右视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "top": {
+                "id": "top",
+                "name": "顶视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.MainRightLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "主-右布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/MainRightLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "right"
+        ],
+        "thumbnail": "base/images/admin/layout/MainRightLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "right": {
+                "id": "right",
+                "name": "右视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.TopMainLayout",
+        "#widget_type": [
+            "layout"
+        ],
+        "#name": "顶-主布局",
+        "description": "",
+        "module": {
+            "moduleName": "base/layout/TopMainLayout",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "main",
+            "top"
+        ],
+        "thumbnail": "base/images/admin/layout/TopMainLayout.png",
+        "#regionsMeta": {
+            "main": {
+                "id": "main",
+                "name": "主视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            },
+            "top": {
+                "id": "top",
+                "name": "顶视图",
+                "Maximum": 1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.TopTabContainer",
+        "#widget_type": [
+            "panel_container",
+            "view"
+        ],
+        "regions": [
+            "view"
+        ],
+        "#regionsMeta": {
+            "view": {
+                "id": "view",
+                "name": "视图",
+                "Maximum": -1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        },
+        "#name": "置顶面板容器",
+        "description": "",
+        "module": {
+            "moduleName": "rdijit/layout/TopTabLayout1",
+            "pathName": "rdijit",
+            "pathLocation": "base/rdijit"
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "面板",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "icon": {
+                "defaultValue": "base/images/icon/ICN-TB_Filter-ST.png",
+                "displayLabel": "图标",
+                "inputType": "image"
+            },
+            "selectedIcon": {
+                "defaultValue": "base/images/icon/ICN-TB_Filter-ST_SEL.png",
+                "displayLabel": "选中图标",
+                "inputType": "image"
+            }
+        }
+    }, {
+        "widget_id": "Base.LeftTabContainer",
+        "#widget_type": [
+            "panel_container",
+            "view"
+        ],
+        "regions": [
+            "panel"
+        ],
+        "#regionsMeta": {
+            "panel": {
+                "id": "panel",
+                "name": "面板",
+                "Maximum": -1,
+                "widget_types": [
+                    "view"
+                ]
+            }
+        },
+        "#name": "居左面板容器",
+        "description": "",
+        "module": {
+            "moduleName": "rdijit/layout/LeftTabLayout",
+            "pathName": "rdijit",
+            "pathLocation": "base/rdijit"
+        },
+        "parameters": {}
+    }, {
+        "widget_id": "Base.MapGlobeView",
+        "#name": "2/3D地图视图",
+        "description": "",
+        "#widget_type": [
+            "view"
+        ],
+        "module": {
+            "moduleName": "base/map/MapGlobeView",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "basemap",
+            "layer",
+            "plugin"
+        ],
+        "#regionsMeta": {
+            "basemap": {
+                "id": "basemap",
+                "name": "底图",
+                "Maximum": -1,
+                "widget_types": [
+                    "basemap"
+                ]
+            },
+            "layer": {
+                "id": "layer",
+                "name": "图层",
+                "Maximum": -1,
+                "widget_types": [
+                    "maplayer"
+                ]
+            },
+            "plugin": {
+                "id": "plugin",
+                "name": "插件",
+                "Maximum": -1,
+                "widget_types": [
+                    "mapplugin"
+                ]
+            }
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "3D地图",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "icon": {
+                "defaultValue": "base/images/icon/ICN-TB_Map-STD.png",
+                "displayLabel": "图标",
+                "inputType": "image"
+            },
+            "selectedIcon": {
+                "defaultValue": "base/images/icon/ICN-TB_Map-SEL.png",
+                "displayLabel": "选中图标",
+                "inputType": "image"
+            },
+            "type": {
+                "defaultValue": "2d",
+                "displayLabel": "地图类型",
+                "inputType": "radio",
+                "data": [
+                    "2d",
+                    "3d"
+                ]
+            },
+            "lgtd": {
+                "defaultValue": 115.28,
+                "displayLabel": "经度",
+                "inputType": "textbox"
+            },
+            "lttd": {
+                "defaultValue": 29.28,
+                "displayLabel": "纬度",
+                "inputType": "textbox"
+            },
+            "defaultZoom": {
+                "defaultValue": 8,
+                "displayLabel": "默认显示层级",
+                "inputType": "datarange",
+                "datarange": [
+                    6,
+                    13
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.MapView",
+        "#name": "地图视图",
+        "description": "",
+        "#widget_type": [
+            "view"
+        ],
+        "module": {
+            "moduleName": "base/map/MapView1",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "basemap",
+            "layer",
+            "plugin"
+        ],
+        "#regionsMeta": {
+            "basemap": {
+                "id": "basemap",
+                "name": "底图",
+                "Maximum": -1,
+                "widget_types": [
+                    "basemap"
+                ]
+            },
+            "layer": {
+                "id": "layer",
+                "name": "图层",
+                "Maximum": -1,
+                "widget_types": [
+                    "maplayer"
+                ]
+            },
+            "plugin": {
+                "id": "plugin",
+                "name": "插件",
+                "Maximum": -1,
+                "widget_types": [
+                    "mapplugin"
+                ]
+            }
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "地图",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "icon": {
+                "defaultValue": "base/images/icon/ICN-TB_Map-STD.png",
+                "displayLabel": "图标",
+                "inputType": "image"
+            },
+            "selectedIcon": {
+                "defaultValue": "base/images/icon/ICN-TB_Map-SEL.png",
+                "displayLabel": "选中图标",
+                "inputType": "image"
+            },
+            "type": {
+                "defaultValue": "2d",
+                "displayLabel": "地图类型",
+                "inputType": "radio",
+                "data": [
+                    "2d",
+                    "3d"
+                ]
+            },
+            "lgtd": {
+                "defaultValue": 115.28,
+                "displayLabel": "经度",
+                "inputType": "textbox"
+            },
+            "lttd": {
+                "defaultValue": 29.28,
+                "displayLabel": "纬度",
+                "inputType": "textbox"
+            },
+            "defaultZoom": {
+                "defaultValue": 8,
+                "displayLabel": "默认显示层级",
+                "inputType": "datarange",
+                "datarange": [
+                    6,
+                    13
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.BaseMapsLayer",
+        "#name": "底图",
+        "description": "",
+        "#widget_type": [
+            "basemap"
+        ],
+        "module": {
+            "moduleName": "base/map/exlayers/BaseMapsLayer",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "影像",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "url": {
+                "defaultValue": "192.168.228.246:8080/cacheLayer/",
+                "displayLabel": "URL",
+                "inputType": "textbox"
+            },
+            "type": {
+                "defaultValue": "googleimage",
+                "displayLabel": "底图类型",
+                "inputType": "select",
+                "data": [
+                    "googleimage",
+                    "googletrain",
+                    "googlemap",
+                    "tiled",
+                    "tianditumap",
+                    "tianditutrain",
+                    "tiandituimage",
+                    "dynamic"
+                ]
+            },
+            "icon": {
+                "defaultValue": "base/images/basemaps/googleimage.png",
+                "displayLabel": "图标",
+                "inputType": "image"
+            },
+            "visible": {
+                "defaultValue": false,
+                "displayLabel": "是否可见",
+                "inputType": "radio"
+            }
+        }
+    }, {
+        "widget_id": "Base.Previewcard",
+        "#widget_type": [
+            "previewcard"
+        ],
+        "#name": "预览面板",
+        "module": {
+            "moduleName": "base/previewcard/Previewcard",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "regions": [
+            "layout"
+        ],
+        "#regionsMeta": {
+            "layout": {
+                "id": "layout",
+                "name": "布局",
+                "Maximum": 1,
+                "widget_types": [
+                    "layout"
+                ]
+            }
+        },
+        "#parametersMeta": {
+            "showType": {
+                "defaultValue": "infoWindow",
+                "displayLabel": "显示类型",
+                "inputType": "select",
+                "data": [
+                    "infoWindow"
+                ]
+            }
+        }
+    }, {
+        "widget_id": "Base.list.BaseGridView",
+        "#name": "普通表格",
+        "description": "JQ基础grid",
+        "#widget_type": [
+            "list"
+        ],
+        "module": {
+            "moduleName": "base/list/BaseGridView",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "url": {
+                "defaultValue": "base/api/cfg/app",
+                "rules": "required",
+                "displayLabel": "服务地址",
+                "inputType": "textbox"
+            },
+            "col": {
+                "defaultValue": {
+                    "colNames": [
+                        "行政区划",
+                        "手机号码",
+                        "银行卡号",
+                        "备注",
+                        "操作"
+                    ],
+                    "colModel": [{
+                        "name": "adcd",
+                        "index": "adcd",
+                        "width": "20%",
+                        "align": "center"
+                    }, {
+                        "name": "appNm",
+                        "index": "appNm",
+                        "width": "15%",
+                        "align": "center"
+                    }, {
+                        "name": "appId",
+                        "index": "appId",
+                        "width": "20%",
+                        "align": "center"
+                    }, {
+                        "name": "defaultPageId",
+                        "index": "defaultPageId",
+                        "width": "35%",
+                        "align": "left",
+                        "sortable": false
+                    }, {
+                        "name": "categoryId",
+                        "index": "categoryId",
+                        "width": "10%",
+                        "align": "center",
+                        "sortable": false
+                    }]
+                },
+                "displayLabel": "展示列",
+                "inputType": "object"
+            },
+            "rownumbers": {
+                "defaultValue": true,
+                "displayLabel": "是否添加左侧行号",
+                "inputType": "radio",
+                "data": [
+                    true,
+                    false
+                ]
+            },
+            "viewrecords": {
+                "defaultValue": true,
+                "displayLabel": "览导航栏显示记录总数",
+                "inputType": "radio",
+                "data": [
+                    true,
+                    false
+                ]
+            },
+            "rowNum": {
+                "defaultValue": 20,
+                "rules": "required",
+                "displayLabel": "每页显示记录数",
+                "inputType": "textbox"
+            },
+            "rowList": {
+                "defaultValue": [
+                    15,
+                    20,
+                    25
+                ],
+                "displayLabel": "下拉列表框元素数组",
+                "inputType": "object"
+            }
+        }
+    }, {
+        "widget_id": "Base.List",
+        "#name": "列表视图",
+        "description": "",
+        "#widget_type": [
+            "view"
+        ],
+        "module": {
+            "moduleName": "base/list/AssetListViewer",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "config_module": {},
+        "parameters": {
+            "view_name": "contentViewTab-List",
+            "i18nLabel": "列表",
+            "icon": "base/images/icon/ICN-TB_List-STD.png",
+            "selectedIcon": "base/images/icon/ICN-TB_List-SEL.png"
+        }
+    }, {
+        "widget_id": "Base.Chart",
+        "#name": "图表视图",
+        "description": "",
+        "#widget_type": [
+            "view"
+        ],
+        "module": {
+            "moduleName": "base/chart/ChartView",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "config_module": {},
+        "parameters": {
+            "view_name": "contentViewTab-Chart",
+            "i18nLabel": "柱图",
+            "icon": "base/images/icon/ICN-TB_Reports-STD.png",
+            "selectedIcon": "base/images/icon/ICN-TB_Reports-SEL.png"
+        }
+    }, {
+        "widget_id": "Base.Demo",
+        "#name": "范例视图",
+        "description": "",
+        "#widget_type": [
+            "view"
+        ],
+        "module": {
+            "moduleName": "base/demo/demoView",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "config_module": {}
+    }, {
+        "widget_id": "Base.FilterFloatPanel",
+        "#name": "浮动面板",
+        "description": "",
+        "#widget_type": [
+            "controller"
+        ],
+        "module": {
+            "moduleName": "base/filter/FilterFloatPanel",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "parameters": {
+            "i18nLabel": "筛选",
+            "icon": "base/images/icon/ICN-TB_Filter-STD.png",
+            "selectedIcon": "base/images/icon/ICN-TB_Filter-SEL.png"
+        },
+        "primaryPaneAttr": {
+            "title": "",
+            "overflow": "hidden",
+            "hasHideButton": false,
+            "name": "",
+            "position": {
+                "top": "5px",
+                "left": "0px",
+                "right": "0px"
+            },
+            "fullSize": {
+                "width": "30%",
+                "height": "90%"
+            }
+        }
+    }, {
+        "widget_id": "Base.Legend",
+        "#name": "图例",
+        "description": "",
+        "#widget_type": [
+            "controller"
+        ],
+        "module": {
+            "moduleName": "base/legend/LegendPanel",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.MapBoundary",
+        "#name": "地图边界",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "description": "地图边界",
+        "module": {
+            "moduleName": "base/map/widgets/MapBoundary",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.MapRegionSel",
+        "#name": "政区选择",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "description": "政区选择",
+        "module": {
+            "moduleName": "base/map/widgets/MapRegionSel",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.OverviewMap",
+        "#name": "地图鹰眼",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "description": "地图鹰眼",
+        "module": {
+            "moduleName": "base/map/widgets/OverviewMap",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.MapSwitch",
+        "#name": "底图切换",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "description": "底图切换",
+        "module": {
+            "moduleName": "base/map/widgets/MapSwitch",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.MapLayersControl",
+        "#name": "图层控制",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "description": "图层控制",
+        "module": {
+            "moduleName": "base/map/widgets/MapLayersControl",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.MapFullScreen",
+        "#name": "地图全图",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "description": "地图全图",
+        "module": {
+            "moduleName": "base/map/widgets/MapFullScreen",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.MapLegend",
+        "#name": "地图图例",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "description": "地图图例",
+        "module": {
+            "moduleName": "base/map/widgets/MapLegend",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.MapBaseTool",
+        "#name": "基础工具",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "description": "基础工具",
+        "module": {
+            "moduleName": "base/map/widgets/MapBaseTool",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.BaseLayer",
+        "#name": "点图层",
+        "description": "点图层",
+        "#widget_type": [
+            "maplayer"
+        ],
+        "regions": [
+            "window"
+        ],
+        "#regionsMeta": {
+            "window": {
+                "id": "window",
+                "name": "窗体",
+                "Maximum": 1,
+                "widget_types": [
+                    "previewcard"
+                ]
+            }
+        },
+        "module": {
+            "moduleName": "base/map/exlayers/BaseLayer1",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "雨量站图层",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "catalog": {
+                "defaultValue": "Rain",
+                "displayLabel": "所属类别",
+                "inputType": "textbox"
+            },
+            "showType": {
+                "defaultValue": {
+                    "name": "single",
+                    "icon": "base/images/marker/marker.png",
+                    "displayName": "stnm",
+                    "displayValue": "dyp"
+                },
+                "displayLabel": "显示设置",
+                "inputType": "object"
+            }
+        }
+    }, {
+        "widget_id": "Base.MapView.ContourLayer",
+        "#name": "等值面图层",
+        "description": "等值面图层",
+        "#widget_type": [
+            "maplayer"
+        ],
+        "module": {
+            "moduleName": "base/map/exlayers/ContourLayer",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        }
+    }, {
+        "widget_id": "Base.MapView.RainStationLayer",
+        "#name": "雨情图层",
+        "description": "点图层",
+        "#widget_type": [
+            "maplayer"
+        ],
+        "regions": [
+            "window"
+        ],
+        "#regionsMeta": {
+            "window": {
+                "id": "window",
+                "name": "窗体",
+                "Maximum": 1,
+                "widget_types": [
+                    "previewcard"
+                ]
+            }
+        },
+        "module": {
+            "moduleName": "base/map/exlayers/RainStationLayer",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "雨量站图层",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "catalog": {
+                "defaultValue": "rainStation",
+                "displayLabel": "所属类别",
+                "inputType": "textbox"
+            },
+            "showType": {
+                "defaultValue": {
+                    "name": "single",
+                    "icon": "base/images/marker/marker.png",
+                    "displayName": "stnm",
+                    "displayValue": "drp"
+                },
+                "displayLabel": "显示设置",
+                "inputType": "object"
+            }
+        }
+    }, {
+        "widget_id": "Base.MapView.ResStationLayer",
+        "#name": "水库图层",
+        "description": "点图层",
+        "#widget_type": [
+            "maplayer"
+        ],
+        "regions": [
+            "window"
+        ],
+        "#regionsMeta": {
+            "window": {
+                "id": "window",
+                "name": "窗体",
+                "Maximum": 1,
+                "widget_types": [
+                    "previewcard"
+                ]
+            }
+        },
+        "module": {
+            "moduleName": "base/map/exlayers/ResStationLayer",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "水库站站图层",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "catalog": {
+                "defaultValue": "resStation",
+                "displayLabel": "所属类别",
+                "inputType": "textbox"
+            },
+            "showType": {
+                "defaultValue": {
+                    "name": "single",
+                    "icon": "base/images/marker/marker.png",
+                    "displayName": "stnm",
+                    "displayValue": "drp"
+                },
+                "displayLabel": "显示设置",
+                "inputType": "object"
+            }
+        }
+    }, {
+        "widget_id": "Base.MapView.RiverStationLayer",
+        "#name": "河道图层",
+        "description": "点图层",
+        "#widget_type": [
+            "maplayer"
+        ],
+        "regions": [
+            "window"
+        ],
+        "#regionsMeta": {
+            "window": {
+                "id": "window",
+                "name": "窗体",
+                "Maximum": 1,
+                "widget_types": [
+                    "previewcard"
+                ]
+            }
+        },
+        "module": {
+            "moduleName": "base/map/exlayers/RiverStationLayer",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "河道站图层",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "catalog": {
+                "defaultValue": "riverStation",
+                "displayLabel": "所属类别",
+                "inputType": "textbox"
+            },
+            "showType": {
+                "defaultValue": {
+                    "name": "single",
+                    "icon": "base/images/marker/marker.png",
+                    "displayName": "stnm",
+                    "displayValue": "drp"
+                },
+                "displayLabel": "显示设置",
+                "inputType": "object"
+            }
+        }
+    }, {
+        "widget_id": "Base.MapView.AdcdStationLayer",
+        "#name": "政区图层",
+        "description": "点柱图层",
+        "#widget_type": [
+            "maplayer"
+        ],
+        "regions": [
+            "window"
+        ],
+        "#regionsMeta": {
+            "window": {
+                "id": "window",
+                "name": "窗体",
+                "Maximum": 1,
+                "widget_types": [
+                    "previewcard"
+                ]
+            }
+        },
+        "module": {
+            "moduleName": "base/map/exlayers/AdcdStationLayer",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "政区图层",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "catalog": {
+                "defaultValue": "adcdStation",
+                "displayLabel": "所属类别",
+                "inputType": "textbox"
+            },
+            "showType": {
+                "defaultValue": {
+                    "name": "single",
+                    "icon": "base/images/marker/marker.png",
+                    "displayName": "stnm",
+                    "displayValue": "drp"
+                },
+                "displayLabel": "显示设置",
+                "inputType": "object"
+            }
+        }
+    }, {
+        "widget_id": "Base.LinkedPanelView",
+        "#widget_type": [
+            "previewcard_view"
+        ],
+        "#name": "链接面板",
+        "description": "",
+        "module": {
+            "moduleName": "base/previewcard/LinkedPanelView",
+            "pathName": "base",
+            "pathLocation": "base/js"
+        },
+        "#parametersMeta": {
+            "i18nLabel": {
+                "defaultValue": "链接面板",
+                "rules": "required",
+                "displayLabel": "显示名称",
+                "inputType": "textbox"
+            },
+            "rows": {
+                "defaultValue": 2,
+                "rules": "numeric",
+                "displayLabel": "行数",
+                "inputType": "textbox"
+            },
+            "columns": {
+                "defaultValue": 3,
+                "rules": "numeric",
+                "displayLabel": "列数",
+                "inputType": "textbox"
+            },
+            "position": {
+                "defaultValue": {
+                    "width": 300,
+                    "height": 60
+                },
+                "displayLabel": "位置信息",
+                "inputType": "object"
+            },
+            "linkData": {
+                "defaultValue": [{
+                    "label": "查看报警历史",
+                    "url": "http://localhost:8080/rich/iot/data_monitor/web"
+                }, {
+                    "label": "查看测站信息",
+                    "url": "http://localhost:8080/rich/iot/data_monitor/web"
+                }, {
+                    "label": "查看报警规则",
+                    "url": "http://localhost:8080/rich/iot/data_monitor/web"
+                }],
+                "displayLabel": "链接数据",
+                "inputType": "object"
+            },
+            "icon": {
+                "defaultValue": "base/images/icon/ICN-TB_Reports-STD.png",
+                "displayLabel": "图标",
+                "inputType": "image"
+            },
+            "selectedIcon": {
+                "defaultValue": "base/images/icon/ICN-TB_Reports-SEL.png",
+                "displayLabel": "选中图标",
+                "inputType": "image"
+            }
+        }
+    }, {
+        "widget_id": "Base.MapView.MapRegionSel",
+        "#widget_type": [
+            "mapplugin"
+        ],
+        "#name": "区域选择",
+        "module": {
+            "moduleName": "base/map/widgets/MapRegionSel",
+            "pathName": "base",
+            "pathLocation": "/rich/base/web"
+        },
+        "#parametersMeta": {
+            "selectedIcon": {
+                "defaultValue": "base/images/icon/ICN-TB_Filter-SEL.png",
+                "displayLabel": "选中图标",
+                "inputType": "image"
+            }
+        }
+    }],
+    "pages": [{
+        "page_id": "Base.page1",
+        "type": "page",
+        "name": "综合监视",
+        "description": "",
+        "layout_id": "Base.FloatLayout",
+        "config": [{
+            "id": "Base.FloatLayout",
+            "widget_id": "Base.FloatLayout",
+            "module": "base/layout/FloatLayout",
+            "regions": [
+                "view",
+                "panel",
+                "task"
+            ],
+            "container": "root"
+        }, {
+            "id": "Base.TopTabContainer",
+            "widget_id": "Base.TopTabContainer",
+            "module": "rdijit/layout/TopTabLayout1",
+            "container": "Base.FloatLayout",
+            "regions": [
+                "view"
+            ],
+            "parameters": {
+                "region": "panel",
+                "i18nLabel": "站点",
+                "icon": "base/images/icon/ICN-TB_Filter-ST.png",
+                "selectedIcon": "base/images/icon/ICN-TB_Filter-ST_SEL.png"
+            }
+        }, {
+            "id": "data_monitor.simpleFilter",
+            "widget_id": "data_monitor.simpleFilter",
+            "module": "data_monitor/simpleFilter/defaultView1",
+            "container": "Base.TopTabContainer",
+            "parameters": {
+                "region": "view",
+                "conf": {
+                    "fav": true
+                },
+                "i18nLabel": "收藏",
+                "icon": "fa fa-star",
+                "selectedIcon": "base/images/icon/ICN-TB_Filter-SEL.png"
+            }
+        }, {
+            "id": "data_monitor.simpleFilter1",
+            "widget_id": "data_monitor.simpleFilter",
+            "module": "data_monitor/simpleFilter/defaultView1",
+            "container": "Base.TopTabContainer",
+            "parameters": {
+                "region": "view",
+                "conf": {},
+                "i18nLabel": "全部",
+                "icon": "fa fa-th-large",
+                "selectedIcon": "base/images/icon/ICN-TB_Filter-SEL.png"
+            }
+        }, {
+            "id": "Base.MapView",
+            "widget_id": "Base.MapView",
+            "module": "base/map/MapView",
+            "container": "Base.FloatLayout",
+            "regions": [
+                "basemap",
+                "layer",
+                "plugin"
+            ],
+            "parameters": {
+                "region": "view",
+                "view_name": "contentViewTab-Map",
+                "i18nLabel": "地图",
+                "icon": "base/images/icon/ICN-TB_Map-STD.png",
+                "selectedIcon": "base/images/icon/ICN-TB_Map-SEL.png",
+                "type": "2d",
+                "tileServerURL": "//services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer",
+                "lgtd": 115.28,
+                "lttd": 29.28,
+                "defaultZoom": 8
+            }
+        }, {
+            "id": "base.googleimagelayer",
+            "widget_id": "Base.BaseMapsLayer",
+            "module": "base/map/exlayers/BaseMapsLayer",
+            "container": "Base.MapView",
+            "parameters": {
+                "region": "basemap",
+                "i18nLabel": "影像",
+                "url": "192.168.228.246:8080/cacheLayer/",
+                "type": "googleimage",
+                "icon": "base/images/basemaps/googleimage.png",
+                "visible": false
+            }
+        }, {
+            "id": "base.googletrainlayer",
+            "widget_id": "Base.BaseMapsLayer",
+            "module": "base/map/exlayers/BaseMapsLayer",
+            "container": "Base.MapView",
+            "parameters": {
+                "region": "basemap",
+                "i18nLabel": "地形",
+                "url": "http://cache1.arcgisonline.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer",
+                "type": "googletrain",
+                "icon": "base/images/basemaps/googletrain.png",
+                "visible": false
+            }
+        }, {
+            "id": "base.googlemaplayer",
+            "widget_id": "Base.BaseMapsLayer",
+            "module": "base/map/exlayers/BaseMapsLayer",
+            "container": "Base.MapView",
+            "parameters": {
+                "region": "basemap",
+                "i18nLabel": "矢量",
+                "url": "http://cache1.arcgisonline.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer",
+                "type": "googlemap",
+                "icon": "base/images/basemaps/googlemap.png",
+                "visible": true
+            }
+        }, {
+            "id": "base.arcgislayer",
+            "widget_id": "Base.BaseMapsLayer",
+            "module": "base/map/exlayers/BaseMapsLayer",
+            "container": "Base.MapView",
+            "parameters": {
+                "region": "basemap",
+                "i18nLabel": "ArcGray",
+                "url": "http://cache1.arcgisonline.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer",
+                "type": "tiled",
+                "icon": "base/images/basemaps/arcgis.png",
+                "visible": false
+            }
+        }, {
+            "id": "Base.MapView.BaseLayer1",
+            "widget_id": "Base.MapView.BaseLayer",
+            "module": "base/map/exlayers/BaseLayer",
+            "container": "Base.MapView",
+            "regions": [
+                "window"
+            ],
+            "parameters": {
+                "region": "layer",
+                "catalog": "Rain",
+                "i18nLabel": "雨量站图层",
+                "showType": {
+                    "name": "single",
+                    "icon": "base/images/marker/marker.png",
+                    "displayName": "stnm",
+                    "displayValue": "dyp"
+                }
+            }
+        }, {
+            "id": "Base.Previewcard",
+            "widget_id": "Base.Previewcard",
+            "module": "base/previewcard/Previewcard",
+            "container": "Base.MapView.BaseLayer1",
+            "regions": [
+                "layout"
+            ],
+            "parameters": {
+                "region": "window",
+                "showType": "infoWindow"
+            }
+        }, {
+            "id": "Base.BootstrapLayout",
+            "widget_id": "Base.BootstrapLayout",
+            "module": "base/layout/BootstrapLayout",
+            "container": "Base.Previewcard",
+            "regions": [
+                "left",
+                "main"
+            ],
+            "parameters": {
+                "region": "layout"
+            }
+        }, {
+            "id": "Base.Chart",
+            "module": "base/chart/ChartView",
+            "container": "Base.BootstrapLayout",
+            "parameters": {
+                "region": "left",
+                "type": "chart",
+                "position": {
+                    "width": 370
+                },
+                "view_name": "contentViewTab-Chart",
+                "i18nLabel": "柱图",
+                "icon": "base/images/icon/ICN-TB_Reports-STD.png",
+                "selectedIcon": "base/images/icon/ICN-TB_Reports-SEL.png"
+            }
+        }, {
+            "id": "Base.LinkedListView",
+            "module": "base/previewcard/LinkedListView",
+            "container": "",
+            "parameters": {
+                "region": "main",
+                "view_name": "contentViewTab-Chart",
+                "i18nLabel": "柱图",
+                "icon": "base/images/icon/ICN-TB_Reports-STD.png",
+                "selectedIcon": "base/images/icon/ICN-TB_Reports-SEL.png"
+            }
+        }]
+    }, {
+        "page_id": "Base.dashboardpage",
+        "type": "page",
+        "name": "KPI dashboard",
+        "description": "",
+        "layout_id": "Base.ChessBoardLayout",
+        "config": [{
+            "id": "Base.ChessBoardLayout",
+            "widget_id": "Base.ChessBoardLayout",
+            "module": "base/layout/ChessBoardLayout",
+            "regions": [
+                "main"
+            ],
+            "container": "root",
+            "parameters": {
+                "row": 3,
+                "column": 4,
+                "margin": 5
+            }
+        }, {
+            "id": "Base.Chess1",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess2",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 2
+            }
+        }, {
+            "id": "Base.Chess3",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 2,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess4",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess5",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 2
+            }
+        }, {
+            "id": "Base.Chess6",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess7",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess8",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }, {
+            "id": "Base.Chess9",
+            "widget_id": "Base.Chess",
+            "module": "base/dashboard/Chess",
+            "container": "Base.ChessBoardLayout",
+            "parameters": {
+                "region": "main",
+                "xspan": 1,
+                "yspan": 1
+            }
+        }]
+    }],
+    "defaultPageId": "Base.page1",
+    "defaultStyleId": "Grey",
+    "services": [{
+        "service_id": "Base.SessionService",
+        "name": "Session服务",
+        "service_url": "/base/api/session",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.AppService",
+        "name": "APP信息服务",
+        "service_url": "/base/api/cfg/app",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.AppJsonService",
+        "name": "APPJson信息服务",
+        "service_url": "/base/api/cfg/{appId}/json",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.AppCmptService",
+        "name": "App组件列表信息服务",
+        "service_url": "/base/api/cfg/app/{appId}/cmpt",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.CmptService",
+        "name": "组件列表信息服务",
+        "service_url": "/base/api/cfg/cmpt",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.LayoutService",
+        "name": "Layout列表信息服务",
+        "service_url": "/base/api/cfg/Layout",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.PageLayoutService",
+        "name": "PageLayout列表信息服务",
+        "service_url": "/base/api/cfg/page/{pageId}/layout",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.CmptWidgetService",
+        "name": "CmptWidget列表信息服务",
+        "service_url": "/base/api/cfg/cmpt/{cmptId}/widget",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.WidgetService",
+        "name": "Widget列表信息服务",
+        "service_url": "/base/api/cfg/widget",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.CmptPageService",
+        "name": "CmptPage列表信息服务",
+        "service_url": "/base/api/cfg/cmpt/{cmptId}/page",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.AppPageService",
+        "name": "AppPage列表信息服务",
+        "service_url": "/base/api/cfg/app/{appId}/page",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.AppPageTreeeService",
+        "name": "AppPageTreee列表信息服务",
+        "service_url": "/base/api/cfg/app/{appId}/pageTree",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.AppPagePageTreeeService",
+        "name": "AppPagePageTreee列表信息服务",
+        "service_url": "/base/api/cfg/app/{appId}/page/{pageId}/pageTree",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.upload2diskService",
+        "name": "文件磁盘信息服务",
+        "service_url": "/base/api/file/upload2disk",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.upload2dbService",
+        "name": "文件数据库信息服务",
+        "service_url": "/base/api/file/upload2db",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.AppPageAcessService",
+        "name": "AppPageAcess信息服务",
+        "service_url": "/base/api/app/{appId}/page/{pageId}/access",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.RoleService",
+        "name": "Role信息服务",
+        "service_url": "/base/api/acess/role",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.AppServiceAccessService",
+        "name": "AppServiceAccess信息服务",
+        "service_url": "/app/{appId}/cmpt/{cmptId}/service",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }, {
+        "service_id": "Base.RgService",
+        "name": "rg信息服务",
+        "service_url": "/base/api/acess/rg",
+        "accessControl": [{
+            "group": "sysAdmin",
+            "privilege": {
+                "C_ACCESS": true,
+                "R_ACCESS": true,
+                "U_ACCESS": true,
+                "D_ACCESS": true
+            }
+        }]
+    }]
+}]
