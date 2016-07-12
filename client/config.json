@@ -1,0 +1,58 @@
+[
+  {
+    "component_name": "test",
+    "component_id": "test",
+    "component_description": "测试",
+    "component_category": "test",
+    "component_package_name": "test",
+    "component_path": "simple",
+    "component_thumbnail": "base/images/admin/components/base_info.png",
+    "layouts": [
+    ],
+    "styles": [
+    ],
+    "widgets": [
+
+    ],
+    "pages": [
+      {
+        "page_id": "test",
+        "type": "page",
+        "parent_page_id": "null",
+        "name": "test",
+        "description": "单布局widget",
+        "layout_id": "test.BlankLayout",
+        "config": [
+          {
+            "id": "test.BlankLayout",
+            "widget_id": "Base.BlankLayout",
+            "module": "base/layout/BlankLayout",
+            "regions": [
+              "view"
+            ],
+            "container": "main",
+            "parameters": {}
+          },
+
+          {
+            "id": "test.test.test",
+            "widget_id": "test.test.test",
+            "module": "base/temp/tempView",
+            "container": "test.BlankLayout",
+            "parameters": {
+              "region": "view",
+              "title": "全部",
+              "icon": "fa fa-th-large",
+              "selectedIcon": "base/images/icon/ICN-TB_Filter-SEL.png",
+              "color":"#567890"
+            }
+          }
+        ]
+      }
+
+    ],
+    "defaultPageId": "test",
+    "defaultStyleId": "Base.Grey",
+    "services": []
+  }
+]
