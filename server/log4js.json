@@ -1,0 +1,15 @@
+{
+  "appenders": [{
+    "type": "file",
+    "filename": "logs/appbuilder.log",
+    "maxLogSize": "1024k",
+    "backups": 10
+  }, {
+    "type": "console"
+  }],
+
+  "levels": {
+    "[all]": "debug",
+    "express": "warn"
+  }
+}
