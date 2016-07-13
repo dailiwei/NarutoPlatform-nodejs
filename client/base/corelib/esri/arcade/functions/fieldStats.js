@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.16/esri/copyright.txt for details.
+//>>built
+define("esri/arcade/functions/fieldStats",["require","exports"],function(k,f){function g(c){for(var a=0,b=0;b<c.length;b++)a+=c[b];return a/c.length}function h(c){for(var a=g(c),b=0,e=0;e<c.length;e++)b+=Math.pow(a-c[e],2);return b/c.length}f.decodeStatType=function(c){switch(c.toLowerCase()){case "distinct":return"distinct";case "avg":case "mean":return"avg";case "min":return"min";case "sum":return"sum";case "max":return"max";case "stdev":case "stddev":return"stddev";case "var":case "variance":return"var";
+case "count":return"count"}return""};f.calculateStat=function(c,a,b){void 0===b&&(b=1E3);switch(c.toLowerCase()){case "distinct":a:{c=b;b=[];for(var e={},d=0;d<a.length;d++)if(void 0!==a[d]&&null!==a[d]&&void 0===e[a[d]]&&(b.push(a[d]),e[a[d]]=1),b.length>=c&&-1!==c){a=b;break a}a=b}return a;case "avg":case "mean":return g(a);case "min":return Math.min.apply(Math,a);case "sum":for(b=c=0;b<a.length;b++)c+=a[b];return c;case "max":return Math.max.apply(Math,a);case "stdev":case "stddev":return Math.sqrt(h(a));
+case "var":case "variance":return h(a);case "count":return a.length}return 0}});
