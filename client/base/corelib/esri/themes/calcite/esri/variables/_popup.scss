@@ -1,0 +1,36 @@
+$popup-bg:                              $Calcite_Gray_050 !default;
+$popup-default-width:                   380px !default;
+$popup-header-height:                   40px !default; // use this to calculate line-height and button height
+$popup-header-bg:                       $Calcite_Gray_050 !default;
+$popup-header-color:                    $Calcite_Gray_700 !default;
+$popup-header-padding-vertical:         10px !default;
+$popup-header-padding-horizontal:       15px !default;
+$popup-header-font-size:                $font-size-large !default;
+$popup-header-line-height:              ($popup-header-height - $popup-header-padding-vertical * 2) / $popup-header-font-size !default;
+$popup-content-max-height:              300px !default;
+$popup-content-padding-horizontal:      15px !default;
+$popup-content-font-size:               $font-size-base !default;
+$popup-btn-padding-vertical:            $popup-header-padding-vertical !default;
+$popup-btn-padding-horizontal:          8px !default;
+$popup-btn-font-size:                   13px !default;
+$popup-btn-color:                       $Calcite_Gray_550 !default;
+// Use this variable to place buttons using absolute positioning
+$popup-btn-width-calculated:            $popup-btn-font-size + $popup-btn-padding-horizontal * 2 !default;
+$popup-btn-hover-color:                 $Calcite_Gray_700 !default;
+// Margin between icon and text in a button
+$popup-btn-icon-spacing:                3px !default;
+$popup-btn-height-computed:             40px !default;
+$popup-btn-width-computed:              $popup-btn-font-size + $popup-btn-padding-horizontal * 2 !default;
+$popup-btn-line-height:                 ($popup-btn-height-computed - $popup-btn-padding-vertical * 2) / $popup-btn-font-size !default;
+$popup-pointer-height:                  20px !default;
+$popup-pointer-width:                   14px !default;
+$popup-attr-padding-vertical:           $padding-small-vertical !default;
+$popup-attr-padding-horizontal:         $padding-small-horizontal !default;
+$popup-gallery-default-width:           $popup-default-width - $popup-content-padding-horizontal * 2 * 2 !default;
+$popup-gallery-default-height:          150px !default;
+$popup-gallery-summary-color:           $Calcite_Gray_550 !default;
+$popup-gallery-summary-font-size:       13px !default;
+$popup-gallery-summary-height-computed: 20px !default;
+$popup-gallery-summary-edit-color:      $Calcite_Gray_550 !default;
+// Caption (of charts, images, etc.)
+$popup-caption-color:                   $Calcite_Gray_400 !default;
