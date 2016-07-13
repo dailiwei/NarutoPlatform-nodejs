@@ -1,0 +1,13 @@
+/*core css dojo */
+@import url("../corelib/dojo/resources/dojo.css");
+@import url("../corelib/dijit/themes/flat/flat.css");
+@import url("../corelib/gridx/resources/claro/Gridx.css");
+/*<!--bootStrap-->*/
+@import url("../vendor/bootstrap/css/bootstrap.min.css");
+/*<!-- gis -->*/
+@import url("../corelib/esri/css/esri.css");
+@import url("../corelib/Cesium/CesiumViewer.css");
+/*<!--base style-->*/
+@import url("../css/style.css");
+@import url("../css/themes/blue.css");
+ 

@@ -1,0 +1,660 @@
+/*框架整体标签的设计，一级定义，复写bootstarp，esri等样式内容*/
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+
+/*the css for CheckBox dijit*/
+.rdijit-form-checkbox .checkbox{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border: 1px solid #86909c;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top:3px;
+}
+.rdijit-form-checkbox .checkbox:hover{
+    box-shadow: 0px 0px 5px 0px rgba(81, 177, 254, 0.4);
+}
+.rdijit-form-checkbox .checkbox.checked{
+    background-image: url(images/checked.png);
+    border-style: none;
+}
+.rdijit-form-checkbox .checkbox-label{
+    font-size: 14px;
+    margin: auto 5px;
+    cursor: pointer;
+}
+
+/*the css for RadioBtn dijit*/
+.rdijit-form-radio{
+    min-width: 40px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #bbc3ff;
+    cursor: pointer;
+    background-color: white;
+}
+.rdijit-form-radio-inner{
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+    background-image: url(images/radio_uncheck.png);
+}
+.rdijit-form-radio-checked .rdijit-form-radio-inner{
+    background-image: url(images/radio_check.png);
+}
+
+
+.rdijit-form-radio-label{
+    padding-top: 2px;
+    cursor:pointer;
+    min-width: 20px;
+    display:inline-block;
+    padding:1px 5px 1px 5px;
+    min-height: 18px;
+    font-size:12px;
+    text-align:left;
+    vertical-align:middle;
+    color: #576cfd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Microsoft YaHei";
+}
+
+.rdijit-form-radio-label-select{
+    cursor:pointer;
+    min-width: 20px;
+    display:inline-block;
+    padding:1px 5px 1px 5px;
+    font-size:12px;
+    text-align:left;
+    vertical-align:middle;
+    background-color: #2e7bc4;
+    color: #fefefe;
+    border-radius: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Microsoft YaHei";
+}
+
+
+/*the css for input tag*/
+.rdijit-form-input{
+    height: 25px;
+    background: #ffffff;
+    border: 1px solid #787878;
+    color: #898989;
+    padding: 5px;
+    margin: 0;
+    border-radius: 3px;
+    font-size: 13px;
+}
+.rdijit-form-input:focus{
+    color: #686868;
+    outline: none;
+    box-shadow: 0px 0px 3px 0px rgba(81, 177, 254, 0.4);
+}
+
+/*a styled button using div*/
+.rdijit-form-btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 1px;
+}
+
+.rdijit-form-btn-select{
+    background: #527191;
+    vertical-align:middle;
+    color: #fcd204;
+}
+
+.rdijit-form-btn:hover{
+    background-color: #9ebffa;
+}
+
+.rdijit-form-btn.rdijit-form-state-disabled{
+    background: #f0f0f0;
+    color: #d9dde0;
+    box-shadow: 0px 0px 0px 1px #d9dde0 inset;
+}
+.rdijit-form-btn.rdijit-form-state-disabled:hover{
+    background: #f0f0f0; /* Old browsers */
+    color: #d9dde0;
+}
+
+/*the css for DropMenu dijit*/
+.rdijit-form-dropmenu{
+    overflow: visible;
+}
+.rdijit-form-dropmenu>.rdijit-form-icon-btn{
+    width: 15px;
+    height: 15px;
+    min-height: 15px;
+    min-width: 15px;
+    border: 1px solid #d9dde0;
+    background-color: #d9dde0;
+    background-image: url(images/v.png);
+}
+.rdijit-form-dropmenu>.rdijit-form-icon-btn:hover{
+    box-shadow: 0px 0px 5px 0px rgba(81, 177, 254, 0.4);
+}
+.rdijit-form-dropmenu>.drop-menu{
+    position: absolute;
+    border: 1px solid #d7dbde;
+    background-color: #d7dbde;
+}
+.rdijit-form-dropmenu .menu-item{
+    height: 25px;
+    min-width: 50px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.rdijit-form-dropmenu .menu-item:hover{
+    color: #51b1fe;
+    text-decoration: underline;
+}
+.rdijit-form-dropmenu .menu-item-line{
+    border: 1px solid #ffffff;
+    margin: 0px;
+}
+
+/*a div button with a icon in its center*/
+.rdijit-form-icon-btn{
+    float: left;
+    min-width: 30px;
+    min-height: 30px;
+    border: 1px solid #999;
+    position: relative;
+    background-color: #ccc;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.rdijit-form-icon-btn:hover{
+    background-color: #f4f4f4;
+}
+
+/*the css for Tab dijit*/
+.rdijit-layout-tab{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.rdijit-layout-tab>.control{
+    margin-left: 63px;
+    margin-right: 3px;
+}
+.rdijit-layout-tab>.control>.tab{
+    height: 30px;
+    line-height:30px;
+    display:inline-block;
+    background-color: #d9dde0;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+.rdijit-layout-tab>.control>.tab.rdijit-state-selected{
+    background-color: #fff;
+    /*     border-top: 2px solid #8994a1; */
+    /* box-shadow: 0 3px 0 #bfbfbf; */
+    border-left: none;
+    color:#00b0da;
+}
+.rdijit-layout-tab>.control>.tab.rdijit-state-selected+.tab{
+    border-left: none;
+}
+.rdijit-layout-tab>.rdijit-layout-viewstack{
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:30px;
+    position: absolute;
+}
+.rdijit-layout-tab.nested>.control>.tab{
+    min-width: 50px;
+    min-height: 30px;
+    background-color: white;
+    color: #8c8c8c;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.rdijit-layout-tab.nested>.control>.tab.rdijit-state-selected{
+    background-color: #e2f6ff;
+    color: #0db2ef;
+}
+
+
+.rdijit-tile-container{
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*the css for ViewStack dijit*/
+.rdijit-layout-viewstack>.view{
+    width: 100%;
+    height: 100%;
+    /* background-color:#edf1f5;*/
+}
+
+.rdijit-layout-viewstack>.view2{
+    width: 100%;
+    height: 100%;
+    /*  background-color:#edf1f5; */
+}
+
+/*container*/
+.rdijit-layout-container{
+    /*border-top:1px solid black;*/
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+    padding: 1px;
+    background-color: white;
+
+    /*border-left:11px #dbdfe8 solid;
+    border-right:11px #dbdfe8 solid;*/
+    /*box-shadow: 0 0 3px #888;*/
+}
+
+.tab_container_head{
+    display: table;
+    width:100%;
+    height:50px;
+}
+
+.rdijit-layout-tab3 .tabItem{
+    cursor: pointer;
+}
+
+.rdijit-layout-tab3 .iconItem{
+    color: #a0a0a0;
+    line-height:2em;
+    display:table-cell;
+    float:none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    cursor:pointer;
+}
+.rdijit-layout-tab3 .iconItem .fa{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.rdijit-layout-tab3 .iconItem:hover{
+    background-color: #edf1f5;
+    color: #000;
+    border-bottom-color: #edf1f5;
+}
+.rdijit-layout-tab3 .iconItem{
+    border-bottom: solid 3px #fff;
+}
+.rdijit-layout-tab3 .iconItem.rdijit-state-selected{
+    color: #337ab7;
+    border-bottom-color: #337ab7;
+}
+/* .rdijit-layout-tab3 .iconItem.rdijit-state-selected i{
+	color: #337ab7;
+} */
+.rdijit-layout-tab3 .rdijit-state-selected4{
+    /*     background-color: #edf1f5; */
+    color: #2f2f2f;
+    border-bottom: solid 2px #023d88;
+    /*border-bottom: solid 1px #bfbfbf;*/
+    /*border-top: solid 1px #bfbfbf;*/
+    /*height: 53px;*/
+    /*box-shadow: 0 0 8px 0 #888;*/
+
+}
+
+.rdijit-layout-tab3 .content-title2{
+    text-align: center;
+    width: 60px;
+    padding-top: 0px;
+    float: left;
+    padding-left: 0px;
+    font-size: 13px;
+}
+
+/**CSS for search dijit***/
+.rdijit-form-search{
+    /*background:#f4f4f4;*/
+    height: 30px;
+    position: relative;
+    border-radius: 2px;
+}
+.rdijit-form-search .rdijit-form-input-wrapper{
+    position:absolute;
+    left: 5px;
+    right:5px;
+}
+.rdijit-form-search .rdijit-form-input{
+    width: 100%;
+    height: 100%;
+}
+
+.rdijit-form-search .rdijit-form-input::-ms-clear{
+    display: none;
+}
+
+.rdijit-form-search .search-btn{
+    position:absolute;
+    right:1px;
+    top:3px;
+    width:30px;
+    height:24px;
+    background:url(images/search.png) no-repeat center center;
+    cursor: pointer;
+}
+/**CSS for AdcdListBox***/
+.rdijit-AdcdListBox-item{
+    vertical-align:middle;
+    text-align: center;
+    font-family:"Microsoft YaHei";
+    font-size:12px;
+    color: #686981;
+    cursor:pointer;
+    margin:0px;
+    height: 18px;
+    background-color: rgba(252, 252, 252, 0.58);
+    border-bottom: solid 1px rgba(158, 191, 250, 0.28);
+}
+.rdijit-AdcdListBox-item:hover{
+    background-color: #6e99fa
+}
+.rdijit-AdcdListBox-item-selected{
+    background-color: #6e99fa
+}
+
+.rdijit-Label-no{
+    cursor:pointer;
+    min-width: 20px;
+    max-width: 240px;
+    display:inline-block;
+    padding:5px;
+    font-size:14px;
+    text-align:center;
+    vertical-align:middle;
+    color: #4c86cb;
+    border-radius: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/**CSS for menuPanel***/
+.rdijit-form-menuPanel{
+    position: absolute;
+    left:-120px;display: none;
+    z-index: 1000;
+    width: 160px;
+    margin-top:5px;
+}
+.richicon .rdijit-form-menuPanel{
+    margin-top:21px;
+}
+.rdijit-form-menuPanel ul{
+    padding: 5px 0;
+    margin: 0px;
+    margin-top: -1px;
+    width:100%;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0px solid #000;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 2px 4px rgba(0,0,0,.175);
+    background:#fff;
+    display:inline-block;
+}
+.richicon .rdijit-form-menuPanel ul{
+    margin-top: -3px;
+}
+.rdijit-form-menuPanel a, .rdijit-form-menuPanel a:HOVER{
+    text-decoration: none;
+}
+.rdijit-form-menuPanel ul > li{
+    position: relative;
+}
+
+.rdijit-form-menuPanel ul li{
+    color:#000;;
+}
+.rdijit-form-menuPanel ul > li > div{
+    position: absolute;
+    right:100%;
+    padding-right:17px;
+    display:none;
+}
+.rdijit-form-menuPanel li{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor:pointer;
+    line-height: 20px;
+}
+.rdijit-form-menuPanel li:HOVER{
+    background-color: rgb(0,175,218);
+    color:#fff;
+    text-decoration: none;
+}
+.rdijit-form-menuPanel ul > li:HOVER > div{
+    display:block;
+}
+.rdijit-form-menuPanel ul > li > a > span{
+    position: absolute;
+    left:10px;
+    display:inline-block;
+    z-index:1001;
+}
+
+
+/*pop*/
+.popup-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 499;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.base-popup{
+    box-shadow: 0 0 4px rgba(160,160,160,0.4);
+    position: absolute;
+    background-color: white;
+    border-radius: 0px;
+    z-index: 500;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-duration: .3s;
+    -webkit-background-clip: content;
+}
+.base-popup > .title{
+
+    padding: 0 20px 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #F8F8F8;
+    border-radius: 2px 2px 0 0
+}
+.base-popup .title-label{
+    overflow: hidden;
+    max-width: 900px;
+    display: block;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.base-popup .close-btn{
+    background: url(images/cancel.png) no-repeat center;
+    width: 14px;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+}
+.base-popup .close-btn2{
+    background: url(images/cancel.png) no-repeat top;
+    width: 24px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+    margin-top: 8px;
+    z-index: 1000;
+}
+
+.base-popup  .content{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.base-popup  .content-absolute{
+    position: absolute;
+    top: 40px;
+    bottom: 3px;
+    left: 2px;
+    right: 2px;
+}
+.base-popup  .content-static{
+    position: static;
+    margin: 20px 30px 0;
+}
+.base-popup  .button-container{
+    overflow: hidden;
+    padding: 15px 30px;
+    width: 100%;
+}
+.base-popup  .button-container-absolute{
+    position: absolute;
+    bottom: 0;
+}
+.base-popup  .button-container>.jimu-popup-btn{
+    /*float: right;*/
+    /*margin-left: 15px;*/
+    margin-top: 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.jimu-popup-btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 33px;
+    text-align: center;
+    background: #518dca;
+    vertical-align: middle;
+    color: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+.jimu-popup-btn.jimu-state-disabled{
+    background-color: #a0acbf;
+}
+
+/* map gis */
+.map_layer_container{
+    /* border-radius:3px;  */
+    /* border:1px solid rgba(136, 136, 136, 0); */
+    overflow-y: auto;
+    width: 250px; height: 200px;
+    display:   none;
+    top: 160px;right:70px;
+    position: absolute;
+    /* background-color: rgba(136, 136, 136, 0.32);
+    border-radius: 2px */
+}
+.map_meetting_container{
+    /* border-radius:3px;  */
+    /* border:1px solid rgba(136, 136, 136, 0); */
+    width: 300px; height: 235px;
+    display:   none;
+    top: 75px;right:70px;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(253, 253, 253, 1);
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+.map_toolbox_container{
+    /* border-radius:3px;  */
+    /* border:1px solid rgba(136, 136, 136, 0); */
+    width: 168px; height: 200px;
+    display:none;
+    top: 300px;right:70px;
+    position: absolute;
+}
+.base_tool_container{
+    width:100%;height:40px;
+    top:2px;
+    display:none;
+    position: absolute;
+}
+
+.esriSimpleSliderTL{
+    bottom: auto;
+    right: 30px;
+    top: 205px;
+    left: auto;
+    width: 35px;
+    padding-left: 2px;
+}
