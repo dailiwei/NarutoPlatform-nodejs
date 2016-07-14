@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="//tm.arcgisonline.cn:8038/App101/arcgis_js_api/3.11/dijit/themes/tundra/tundra.css" />
+    <link rel="stylesheet" href="//tm.arcgisonline.cn:8038/App101/arcgis_js_api/3.11/esri/css/esri.css" />
+    <style>
+        html, body, #map{
+            width:100%;
+            height:100%;
+            padding: 0;
+            margin: 0;
+            background-color: #000000;
+        }
+        .banner{
+            width: 100%;
+            height: 55px;
+            background-color: #002F43;
+            vertical-align: middle;
+            line-height: 35px;
+            color: white;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        }
+        .titleLocal{
+            line-height: 45px;
+            font-size: 28px;
+            padding-left: 15px;
+            /*font-family: "华文中宋";*/
+            font-family: "Microsoft YaHei";
+            text-align: center;
+            font-weight: bold;
+            color: #6699CC;
+
+        }
+        .park{
+
+            stroke-width:9px;
+            stroke:red;
+            stroke-opacity: 0.5;
+            opacity:0.3;
+
+        }
+        .curve{
+            fill:none;
+            stroke-width:1.7px;
+            stroke-opacity: .75;
+        }
+
+        .following{
+
+            stroke-width: 7px;
+        }
+        .staticPark{
+            fill:none;
+            stroke-width: 0px;
+        }
+        .staticCurve{
+            fill:none;
+            stroke: rgb(7,199,7);
+            stroke-width:1.7px;
+
+        }
+    </style>
+    <script>
+        var dojoConfig = {
+            async:true,
+            parseOnLoad:true,
+            serverIP:window.location.host,
+            paths:{extras:location.pathname.replace(/\/[^/]+$/, "") +"/extras"}
+        };
+
+    </script>
+    <script src="//tm.arcgisonline.cn:8038/App101/arcgis_js_api/3.13/init.js"></script>
+    <script src="js/d3.v3.js"></script>
+    <script>
+        var map;
+        var baseUrl="//map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer";
+
+        var dUrl1 = "//localhost:6080/arcgis/rest/services/aircompany/MapServer";
+        require([
+            "esri/map","esri/geometry/Extent",
+            "esri/layers/ArcGISTiledMapServiceLayer",
+            "esri/layers/ArcGISDynamicMapServiceLayer",
+            "esri/layers/FeatureLayer",
+            "esri/Color",
+
+            "extras/StaticLineLayer",
+            "extras/MotionArrowColors",
+
+            "esri/renderers/UniqueValueRenderer",
+            "esri/symbols/SimpleFillSymbol", 				"esri/symbols/SimpleLineSymbol",
+
+            "dojo/_base/connect",
+            "dojo/_base/array",
+            "dojo/number",
+            "dijit/registry",
+
+            "dojo/domReady!"
+        ], function(
+                Map, Extent,
+                ArcGISTiledMapServiceLayer,
+                ArcGISDynamicMapServiceLayer,
+                FeatureLayer,
+                Color,
+
+                StaticLineLayer,
+                MotionArrowColors,
+
+                UniqueValueRenderer,
+                SimpleFillSymbol,
+                SimpleLineSymbol,
+
+                connect,
+                array,
+                number,
+                registry
+
+        ){
+
+            var initExtent = new Extent({
+                "xmin": 7397177.673660297,
+                "ymin": 1998723.5105398588,
+                "xmax": 16706596.222566009,
+                "ymax": 6484659.826539091,
+                "spatialReference":{
+                    "wkid":102100
+                }
+            });
+
+
+            map = new Map("map",{
+                slider:false,
+                extent:initExtent
+            });
+            var blayer = new ArcGISTiledMapServiceLayer(baseUrl);
+            map.addLayer(blayer);
+//            var dlayer = new ArcGISDynamicMapServiceLayer(dUrl1);
+//            dlayer.setVisibleLayers([0]);
+//            map.addLayer(dlayer);
+
+            map.on('load', function(){
+                var dataUrl = "data/data_colors.json";
+                var sAirline = new StaticLineLayer(dataUrl);
+                var mAirline = new MotionArrowColors(dataUrl);
+                map.addLayers([ mAirline]);
+                map.addLayers([sAirline]);
+
+
+            });
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+<div id="header" class="banner">
+    <div class="titleLocal">动态航线展示</div>
+</div>
+<div id="map"></div>
+
+</body>
+</html>

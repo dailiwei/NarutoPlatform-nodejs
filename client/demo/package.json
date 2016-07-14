@@ -1,0 +1,13 @@
+{
+	"name": "simple",
+	"version": "2.0",
+	"main": "./demo_/demoView",
+	"dependencies": {
+		"dojo": "",
+		"dijit": "",
+		"dojox": ""
+	},
+	"description": "simple",
+	"bugs": "",
+	"dojoBuild": "package.js"
+}

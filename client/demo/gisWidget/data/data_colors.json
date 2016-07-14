@@ -1,0 +1,192 @@
+{
+  "features":
+  [
+    {
+      "geometry":{
+        "type": "Point",
+        "coordinates":[116.380943, 39.923615]
+      },
+      "properties":{
+        "team":{
+          "name":"北京",
+          "city":"beijing",
+          "code":"beijing"
+        },
+        "target":[{
+          "name":"成都",
+          "code":"chengdu"
+        },{
+          "name":"广州",
+          "code":"guangzhou"
+        },{
+          "name":"贵阳",
+          "code":"guiyang"
+        },{
+          "name":"沈阳",
+          "code":"shenyang"
+        },{
+          "name":"西安",
+          "code":"xian"
+        },{
+          "name":"厦门",
+          "code":"xiamen"
+        }],
+        "color":"#C2DA19"
+
+      }
+    },
+    {
+      "geometry":{
+        "type": "Point",
+        "coordinates":[86.150, 41.704]
+      },
+      "properties":{
+
+        "team":{
+          "name":"新疆",
+          "city":"xinjiang",
+          "code":"xinjiang"
+        },
+        "target":[{
+          "name":"成都",
+          "code":"chengdu"
+        },{
+          "name":"西安",
+          "code":"xian"
+        }, {
+          "name":"厦门",
+          "code":"xiamen"
+        }],
+        "color":"#E4AE0D"
+
+      }
+    },
+    {
+      "geometry":{
+        "type": "Point",
+        "coordinates":[118.138063, 24.540341]
+      },
+      "properties":{
+
+        "team":{
+          "name":"厦门",
+          "city":"xiamen",
+          "code":"xiamen"
+        },
+        "target":[{
+          "name":"西安",
+          "code":"xian"
+        }],
+        "color": "#F36329"
+
+      }
+    },
+    {
+      "geometry":{
+        "type": "Point",
+        "coordinates":[108.949028, 34.261684]
+      },
+      "properties":{
+
+        "team":{
+          "name":"西安",
+          "city":"xian",
+          "code":"xian"
+        },
+        "target":[{
+          "name":"新疆",
+          "code":"xinjiang"
+        },{
+          "name":"厦门",
+          "code":"xiamen"
+        },{
+          "name":"沈阳",
+          "code":"shenyang"
+        },{
+          "name":"北京",
+          "code":"beijing"
+        },{
+          "name":"成都",
+          "code":"chengdu"
+        },{
+          "name":"广州",
+          "code":"guangzhou"
+        },{
+          "name":"贵阳",
+          "code":"guiyang"
+        }],
+
+        "color":"#D14C39"
+
+      }
+    },
+    {
+      "geometry":{
+        "type": "Point",
+        "coordinates":[123.411682, 41.796616]
+      },
+      "properties":{
+
+        "team":{
+          "name":"沈阳",
+          "city":"shenyang",
+          "code":"shenyang"
+        },
+        "target":[],
+        "color":"#FEA73E"
+
+      }
+    },
+    {
+      "geometry":{
+        "type": "Point",
+        "coordinates":[104.081757, 30.661057]
+      },
+      "properties":{
+
+        "team":{
+          "name":"成都",
+          "city":"chengdu",
+          "code":"chengdu"
+        },
+        "target":[],
+        "color":"#0BF551"
+
+      }
+    },
+    {
+      "geometry":{
+        "type": "Point",
+        "coordinates":[113.261429, 23.118912]
+      },
+      "properties":{
+
+        "team":{
+          "name":"广州",
+          "city":"guangzhou",
+          "code":"guangzhou"
+        },
+        "target":[],
+        "color":"#90FC08"
+
+      }
+    },
+    {
+      "geometry":{
+        "type": "Point",
+        "coordinates":[106.711372, 26.576874]
+      },
+      "properties":{
+        "team":{
+          "name":"贵阳",
+          "city":"guiyang",
+          "code":"guiyang"
+        },
+        "target":[],
+        "color":"#F5D810"
+
+      }
+    }
+
+  ]
+}

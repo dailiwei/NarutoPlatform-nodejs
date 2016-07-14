@@ -1,0 +1,59 @@
+[
+  {
+    "component_name": "test",
+    "component_id": "test",
+    "component_description": "测试",
+    "component_category": "test",
+    "component_package_name": "test",
+    "component_path": "simple",
+    "component_thumbnail": "base/images/admin/components/base_info.png",
+    "layouts": [
+    ],
+    "styles": [
+    ],
+    "ps":"元数据的定义",
+    "widgets": [
+
+    ],
+    "pages": [
+      {
+        "page_id": "testPage",
+        "type": "page",
+        "parent_page_id": "null",
+        "name": "test",
+        "description": "单布局widget",
+        "layout_id": "test.BlankLayout",
+        "config": [
+          {
+            "id": "test.BlankLayout",
+            "widget_id": "Base.BlankLayout",
+            "module": "base/layout/BlankLayout",
+            "regions": [
+              "view"
+            ],
+            "container": "main",
+            "parameters": {}
+          },
+           
+          {
+            "id": "simple.gridWidget.JQGridView",
+            "widget_id": "simple.gridWidget.JQGridView",
+            "module": "simple/gisWidget/MapWidget",
+            "container": "test.BlankLayout",
+            "parameters": {
+              "region": "view",
+              "conf": {},
+              "i18nLabel": "全部",
+              "icon": "fa fa-th-large",
+              "selectedIcon": "base/images/icon/ICN-TB_Filter-SEL.png"
+            }
+          } 
+        ]
+      }
+       
+    ],
+    "defaultPageId": "testPage",
+    "defaultStyleId": "Base.Grey",
+    "services": []
+  }
+]

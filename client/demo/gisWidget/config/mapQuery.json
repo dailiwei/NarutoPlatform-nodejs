@@ -1,0 +1,168 @@
+[
+  {  
+    "layouts": [
+    ],
+    "styles": [
+    ],
+    "ps":"元数据的定义",
+    "widgets": [ 
+    ],
+    "pages": [
+      {
+        "page_id": "page1",
+        "type": "page",
+        "parent_page_id": null,
+        "name": "通用查询",
+        "description": "",
+        "layout_id": "Base.demo.BootstrapLayout2",
+        "config": [
+          {
+            "id": "Base.demo.BootstrapLayout2",
+            "module": "base/layout/LeftMainLayout",
+            "regions": [
+              "left",
+              "main"
+            ],
+            "container": "main",
+            "parameters": {"left_width": 392}
+          },
+         
+          {
+            "id": "Base.MapView",
+            "widget_id": "Base.MapView",
+            "module": "base/map/MapView1",
+            "container": "Base.demo.BootstrapLayout2",
+            "regions": [
+              "basemap",
+              "layer",
+              "plugin"
+            ],
+            "parameters": {
+              "region": "main",
+              "view_name": "contentViewTab-Map",
+              "i18nLabel": "地图",
+              "icon": "/rich/base/web/images/icon/ICN-TB_Map-STD.png",
+              "selectedIcon": "/rich/base/web/images/icon/ICN-TB_Map-SEL.png",
+              "type": "2d",
+              "tileServerURL": "//services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer",
+              "lgtd": 115.28,
+              "lttd": 29.28,
+              "defaultZoom": 8
+            }
+          },
+
+          {
+            "id": "base.googletrainlayer",
+            "widget_id": "Base.BaseMapsLayer",
+            "module": "base/map/exlayers/BaseMapsLayer",
+            "container": "Base.MapView",
+            "parameters": {
+              "region": "basemap",
+              "i18nLabel": "地形",
+              "label": "地形",
+              "url": "http://cache1.arcgisonline.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer",
+              "type": "googletrain",
+              "icon": "base/images/basemaps/googletrain.png",
+              "visible": true
+            }
+          },
+          {
+            "id": "base.googleimagelayer",
+            "widget_id": "Base.BaseMapsLayer",
+            "module": "base/map/exlayers/BaseMapsLayer",
+            "container": "Base.MapView",
+            "parameters": {
+              "region": "basemap",
+              "i18nLabel": "影像",
+              "label": "影像",
+              "url": "192.168.228.246:8080/cacheLayer/",
+              "type": "googleimage",
+              "icon": "base/images/basemaps/googleimage.png",
+              "visible": false
+            }
+          },
+
+          {
+            "id": "Base.Map.Widgets.MapLayersControl",
+            "widget_id": "Base.MapView.MapLayersControl",
+            "module": "base/map/widgets/MapLayersControl",
+            "container": "Base.MapView",
+            "parameters": {
+              "region": "plugin" 
+            }
+          }, 
+ 
+          {
+            "id": "Base.Map.Widgets.MapFullScreen",
+            "widget_id": "Base.MapView.MapFullScreen",
+            "module": "base/map/widgets/MapFullScreen",
+            "container": "Base.MapView",
+            "parameters": {
+              "region": "plugin"
+            }
+          },
+          {
+            "id": "Base.Map.Widgets.MapBaseTool",
+            "widget_id": "Base.MapView.MapBaseTool",
+            "module": "base/map/widgets/MapBaseTool",
+            "container": "Base.MapView",
+            "parameters": {
+              "region": "plugin"
+            }
+          },
+          {
+            "id": "Base.Map.Widgets.MapSwitch",
+            "module": "base/map/widgets/MapSwitch",
+            "widget_id": "Base.MapView.MapSwitch",
+            "container": "Base.MapView",
+            "parameters": {
+              "region": "plugin"
+            }
+          },
+           {
+            "id": "base.map.dijit.QueryPanel",
+            "module": "base/map/dijit/QueryPanel",
+            "container": "Base.demo.BootstrapLayout2",
+            "parameters": {
+              "region": "left",
+              "regionName": "左侧布局",
+              "i18nLabel":"地图查询列表",
+              "layers":[
+                {
+                  "name": "省界",
+                  "url": "http://gis.rtongcloud.com:6080/arcgis/rest/services/2015shp/MapServer",
+                  "id": 7,
+                  "type":"polygon",
+                  "fields": {
+                    "all": true
+                  }
+                },
+                {
+                  "name": "市界",
+                  "url": "http://gis.rtongcloud.com:6080/arcgis/rest/services/2015shp/MapServer",
+                  "id": 6,
+                  "type":"polygon",
+                  "fields": {
+                    "all": true
+                  }
+                },
+                {
+                  "name": "区县界",
+                  "url": "http://rwworks.com:6080/arcgis/rest/services/2015shp/MapServer",
+                  "id": 5,
+                  "type":"polygon",
+                  "fields": {
+                    "all": true
+                  }
+                }
+
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "defaultPageId": "page1",
+    "defaultStyleId": "Base.Grey"
+  }
+]

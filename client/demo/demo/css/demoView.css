@@ -1,0 +1,24 @@
+.simple-demo-demoView .demo-label{
+
+    margin: 5px;
+    height: 30px;
+    padding: 5px;
+    width: 150px;
+    background-color: #d6dfeb;
+    border: solid 1px #d9dde0;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+
+.simple-demo-demoView .demo-label2{
+
+    margin: 5px;
+    height: 30px;
+    padding: 5px;
+    width: 150px;
+    background-color: #d6dfeb;
+    border: solid 3px #d9dde0;
+    border-radius: 1px;
+    cursor: pointer;
+}
